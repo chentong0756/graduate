@@ -1,0 +1,1979 @@
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+code,
+img,
+b,
+small,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+time,
+strong,
+aside,
+canvas,
+footer,
+header,
+nav,
+section,
+article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Roboto, sans-serif;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "微软雅黑";
+}
+body {
+  font-size: 16px;
+  font-family: "微软雅黑";
+  text-align: center;
+  width: 1200px;
+  margin: auto auto;
+}
+.border {
+  border: 2px solid #BEBEBE;
+}
+#teacher_photo,
+#student_photo,
+#admin_photo {
+  position: absolute;
+  left: 9%;
+  top: 59%;
+  height: 180px;
+  z-index: -100;
+}
+#student_photo {
+  height: 230px;
+}
+#admin_photo {
+  position: absolute;
+  left: 7%;
+  height: 210px;
+}
+#entry {
+  margin: auto auto;
+  width: 1000px;
+}
+#entry #maininfo {
+  margin: auto auto;
+  width: 300px;
+  margin-top: 50px;
+}
+#entry #win {
+  height: 300px;
+  width: 400px;
+  border-radius: 20px;
+  border: 2px solid #bebebe;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+  left: 45%;
+  top: 200px;
+  padding: 30px;
+}
+#entry #win > div:first-child {
+  color: #666;
+  margin-top: 20px;
+  font-size: 20px;
+}
+#entry #win > div {
+  margin: 30px;
+  font-size: 18px;
+}
+#entry #win > div > input {
+  padding-left: 5px;
+}
+#entry #win > div #login {
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+#entry #background {
+  height: 500px;
+  width: 700px;
+  margin-left: 160px;
+  margin-top: 25px;
+  background: url(../build/img/cp1.jpg);
+  border-radius: 20px;
+  z-index: -100;
+  float: left;
+  border: 2px solid #bebebe;
+  box-shadow: 10px 10px 20px #666;
+}
+#entry > div:last-child {
+  background: linear-gradient(#000000, #888888, #dddddd, #888888, #000000);
+  height: 350px;
+  width: 1000px;
+  position: absolute;
+  top: 180px;
+  z-index: -200;
+}
+#item {
+  float: left;
+  width: 150px;
+  border: 2px solid #bebebe;
+  margin-top: 20px;
+  box-shadow: 4px 4px 4px #888888;
+}
+#item > div {
+  padding: 3px;
+  font-size: 18px;
+  background: linear-gradient(to right, #cf5959, #e0e0e0, #3c3c3c);
+}
+#item li {
+  border-top: 2px solid #bebebe;
+  display: block;
+  padding: 5px;
+  background-color: #f6f1f1;
+  font-family: "微软雅黑";
+  color: #4F4F4F;
+}
+#item li:hover {
+  background: linear-gradient(to right, #d9acac, #f0f0f0, #9d9d9d);
+  cursor: pointer;
+}
+#info_student,
+#info_admin,
+#info_teacher {
+  float: left;
+  width: 1000px;
+  height: 600px;
+  border: 2px solid #bebebe;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #f6f1f1;
+}
+#info_student .title,
+#info_admin .title,
+#info_teacher .title {
+  padding-top: 8px;
+  color: #6C6C6C;
+  height: 30px;
+  border-bottom: 2px solid #bebebe;
+  margin-bottom: 20px;
+  font-size: 18px;
+  background: linear-gradient(to right, #cf5959, #e0e0e0, #3c3c3c);
+}
+#info_student #information li,
+#info_admin #information li,
+#info_teacher #information li {
+  padding: 5px;
+  height: 30px;
+  line-height: 30px;
+  margin: auto auto;
+  width: 410px;
+}
+#info_student #information li span,
+#info_admin #information li span,
+#info_teacher #information li span {
+  height: 30px;
+  display: block;
+  float: left;
+  background-color: white;
+}
+#info_student #information li span:first-child,
+#info_admin #information li span:first-child,
+#info_teacher #information li span:first-child {
+  width: 120px;
+  border-right: none;
+}
+#info_student #information li span:last-child,
+#info_admin #information li span:last-child,
+#info_teacher #information li span:last-child {
+  width: 280px;
+  border-left: none;
+}
+#info_student #information .entering,
+#info_admin #information .entering,
+#info_teacher #information .entering {
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #d9acac, #f0f0f0, #9d9d9d);
+  cursor: pointer;
+}
+#info_student #PublicInformation li,
+#info_admin #PublicInformation li,
+#info_teacher #PublicInformation li {
+  box-shadow: 4px 4px 4px #888888;
+  background-color: white;
+  border-radius: 5px;
+}
+#info_student #PublicInformation li span,
+#info_admin #PublicInformation li span,
+#info_teacher #PublicInformation li span {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  cursor: pointer;
+}
+#info_student #PublicInformation li span:hover,
+#info_admin #PublicInformation li span:hover,
+#info_teacher #PublicInformation li span:hover {
+  color: #ff3333;
+}
+#info_student #PublicInformation .whole,
+#info_admin #PublicInformation .whole,
+#info_teacher #PublicInformation .whole {
+  margin: 10px;
+  padding: 10px;
+}
+#info_student #PublicInformation .half,
+#info_admin #PublicInformation .half,
+#info_teacher #PublicInformation .half {
+  margin: 10px;
+  padding: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#info_student #AdminStudent input,
+#info_admin #AdminStudent input,
+#info_teacher #AdminStudent input,
+#info_student #AdminAdmin input,
+#info_admin #AdminAdmin input,
+#info_teacher #AdminAdmin input,
+#info_student #AdminGetstu input,
+#info_admin #AdminGetstu input,
+#info_teacher #AdminGetstu input,
+#info_student #TeaGetstu input,
+#info_admin #TeaGetstu input,
+#info_teacher #TeaGetstu input {
+  height: 30px;
+  line-height: 30px;
+  width: 300px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+#info_student #AdminStudent h4,
+#info_admin #AdminStudent h4,
+#info_teacher #AdminStudent h4,
+#info_student #AdminAdmin h4,
+#info_admin #AdminAdmin h4,
+#info_teacher #AdminAdmin h4,
+#info_student #AdminGetstu h4,
+#info_admin #AdminGetstu h4,
+#info_teacher #AdminGetstu h4,
+#info_student #TeaGetstu h4,
+#info_admin #TeaGetstu h4,
+#info_teacher #TeaGetstu h4 {
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 40px;
+  color: #666;
+  font-weight: normal;
+}
+#info_student #AdminStudent h4 .stu_add,
+#info_admin #AdminStudent h4 .stu_add,
+#info_teacher #AdminStudent h4 .stu_add,
+#info_student #AdminAdmin h4 .stu_add,
+#info_admin #AdminAdmin h4 .stu_add,
+#info_teacher #AdminAdmin h4 .stu_add,
+#info_student #AdminGetstu h4 .stu_add,
+#info_admin #AdminGetstu h4 .stu_add,
+#info_teacher #AdminGetstu h4 .stu_add,
+#info_student #TeaGetstu h4 .stu_add,
+#info_admin #TeaGetstu h4 .stu_add,
+#info_teacher #TeaGetstu h4 .stu_add {
+  color: #888;
+  cursor: pointer;
+  margin-left: 20px;
+}
+#info_student #AdminStudent h4 .stu_add:hover,
+#info_admin #AdminStudent h4 .stu_add:hover,
+#info_teacher #AdminStudent h4 .stu_add:hover,
+#info_student #AdminAdmin h4 .stu_add:hover,
+#info_admin #AdminAdmin h4 .stu_add:hover,
+#info_teacher #AdminAdmin h4 .stu_add:hover,
+#info_student #AdminGetstu h4 .stu_add:hover,
+#info_admin #AdminGetstu h4 .stu_add:hover,
+#info_teacher #AdminGetstu h4 .stu_add:hover,
+#info_student #TeaGetstu h4 .stu_add:hover,
+#info_admin #TeaGetstu h4 .stu_add:hover,
+#info_teacher #TeaGetstu h4 .stu_add:hover {
+  color: #ff3333;
+}
+#info_student #AdminStudent .admin_infor,
+#info_admin #AdminStudent .admin_infor,
+#info_teacher #AdminStudent .admin_infor,
+#info_student #AdminAdmin .admin_infor,
+#info_admin #AdminAdmin .admin_infor,
+#info_teacher #AdminAdmin .admin_infor,
+#info_student #AdminGetstu .admin_infor,
+#info_admin #AdminGetstu .admin_infor,
+#info_teacher #AdminGetstu .admin_infor,
+#info_student #TeaGetstu .admin_infor,
+#info_admin #TeaGetstu .admin_infor,
+#info_teacher #TeaGetstu .admin_infor {
+  margin-top: 10px;
+}
+#info_student #AdminStudent .admin_infor li,
+#info_admin #AdminStudent .admin_infor li,
+#info_teacher #AdminStudent .admin_infor li,
+#info_student #AdminAdmin .admin_infor li,
+#info_admin #AdminAdmin .admin_infor li,
+#info_teacher #AdminAdmin .admin_infor li,
+#info_student #AdminGetstu .admin_infor li,
+#info_admin #AdminGetstu .admin_infor li,
+#info_teacher #AdminGetstu .admin_infor li,
+#info_student #TeaGetstu .admin_infor li,
+#info_admin #TeaGetstu .admin_infor li,
+#info_teacher #TeaGetstu .admin_infor li {
+  height: 25px;
+  line-height: 25px;
+  width: 600px;
+  float: left;
+  margin-left: 200px;
+}
+#info_student #AdminStudent .admin_infor li span,
+#info_admin #AdminStudent .admin_infor li span,
+#info_teacher #AdminStudent .admin_infor li span,
+#info_student #AdminAdmin .admin_infor li span,
+#info_admin #AdminAdmin .admin_infor li span,
+#info_teacher #AdminAdmin .admin_infor li span,
+#info_student #AdminGetstu .admin_infor li span,
+#info_admin #AdminGetstu .admin_infor li span,
+#info_teacher #AdminGetstu .admin_infor li span,
+#info_student #TeaGetstu .admin_infor li span,
+#info_admin #TeaGetstu .admin_infor li span,
+#info_teacher #TeaGetstu .admin_infor li span {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 100px;
+}
+#info_student #AdminStudent .admin_infor li .stu_delete,
+#info_admin #AdminStudent .admin_infor li .stu_delete,
+#info_teacher #AdminStudent .admin_infor li .stu_delete,
+#info_student #AdminAdmin .admin_infor li .stu_delete,
+#info_admin #AdminAdmin .admin_infor li .stu_delete,
+#info_teacher #AdminAdmin .admin_infor li .stu_delete,
+#info_student #AdminGetstu .admin_infor li .stu_delete,
+#info_admin #AdminGetstu .admin_infor li .stu_delete,
+#info_teacher #AdminGetstu .admin_infor li .stu_delete,
+#info_student #TeaGetstu .admin_infor li .stu_delete,
+#info_admin #TeaGetstu .admin_infor li .stu_delete,
+#info_teacher #TeaGetstu .admin_infor li .stu_delete,
+#info_student #AdminStudent .admin_infor li .stu_revise,
+#info_admin #AdminStudent .admin_infor li .stu_revise,
+#info_teacher #AdminStudent .admin_infor li .stu_revise,
+#info_student #AdminAdmin .admin_infor li .stu_revise,
+#info_admin #AdminAdmin .admin_infor li .stu_revise,
+#info_teacher #AdminAdmin .admin_infor li .stu_revise,
+#info_student #AdminGetstu .admin_infor li .stu_revise,
+#info_admin #AdminGetstu .admin_infor li .stu_revise,
+#info_teacher #AdminGetstu .admin_infor li .stu_revise,
+#info_student #TeaGetstu .admin_infor li .stu_revise,
+#info_admin #TeaGetstu .admin_infor li .stu_revise,
+#info_teacher #TeaGetstu .admin_infor li .stu_revise,
+#info_student #AdminStudent .admin_infor li .enterstu,
+#info_admin #AdminStudent .admin_infor li .enterstu,
+#info_teacher #AdminStudent .admin_infor li .enterstu,
+#info_student #AdminAdmin .admin_infor li .enterstu,
+#info_admin #AdminAdmin .admin_infor li .enterstu,
+#info_teacher #AdminAdmin .admin_infor li .enterstu,
+#info_student #AdminGetstu .admin_infor li .enterstu,
+#info_admin #AdminGetstu .admin_infor li .enterstu,
+#info_teacher #AdminGetstu .admin_infor li .enterstu,
+#info_student #TeaGetstu .admin_infor li .enterstu,
+#info_admin #TeaGetstu .admin_infor li .enterstu,
+#info_teacher #TeaGetstu .admin_infor li .enterstu {
+  color: #888;
+  cursor: pointer;
+}
+#info_student #AdminStudent .admin_infor li .stu_delete:hover,
+#info_admin #AdminStudent .admin_infor li .stu_delete:hover,
+#info_teacher #AdminStudent .admin_infor li .stu_delete:hover,
+#info_student #AdminAdmin .admin_infor li .stu_delete:hover,
+#info_admin #AdminAdmin .admin_infor li .stu_delete:hover,
+#info_teacher #AdminAdmin .admin_infor li .stu_delete:hover,
+#info_student #AdminGetstu .admin_infor li .stu_delete:hover,
+#info_admin #AdminGetstu .admin_infor li .stu_delete:hover,
+#info_teacher #AdminGetstu .admin_infor li .stu_delete:hover,
+#info_student #TeaGetstu .admin_infor li .stu_delete:hover,
+#info_admin #TeaGetstu .admin_infor li .stu_delete:hover,
+#info_teacher #TeaGetstu .admin_infor li .stu_delete:hover,
+#info_student #AdminStudent .admin_infor li .stu_revise:hover,
+#info_admin #AdminStudent .admin_infor li .stu_revise:hover,
+#info_teacher #AdminStudent .admin_infor li .stu_revise:hover,
+#info_student #AdminAdmin .admin_infor li .stu_revise:hover,
+#info_admin #AdminAdmin .admin_infor li .stu_revise:hover,
+#info_teacher #AdminAdmin .admin_infor li .stu_revise:hover,
+#info_student #AdminGetstu .admin_infor li .stu_revise:hover,
+#info_admin #AdminGetstu .admin_infor li .stu_revise:hover,
+#info_teacher #AdminGetstu .admin_infor li .stu_revise:hover,
+#info_student #TeaGetstu .admin_infor li .stu_revise:hover,
+#info_admin #TeaGetstu .admin_infor li .stu_revise:hover,
+#info_teacher #TeaGetstu .admin_infor li .stu_revise:hover,
+#info_student #AdminStudent .admin_infor li .enterstu:hover,
+#info_admin #AdminStudent .admin_infor li .enterstu:hover,
+#info_teacher #AdminStudent .admin_infor li .enterstu:hover,
+#info_student #AdminAdmin .admin_infor li .enterstu:hover,
+#info_admin #AdminAdmin .admin_infor li .enterstu:hover,
+#info_teacher #AdminAdmin .admin_infor li .enterstu:hover,
+#info_student #AdminGetstu .admin_infor li .enterstu:hover,
+#info_admin #AdminGetstu .admin_infor li .enterstu:hover,
+#info_teacher #AdminGetstu .admin_infor li .enterstu:hover,
+#info_student #TeaGetstu .admin_infor li .enterstu:hover,
+#info_admin #TeaGetstu .admin_infor li .enterstu:hover,
+#info_teacher #TeaGetstu .admin_infor li .enterstu:hover {
+  color: #ff3333;
+}
+#info_student #AdminTeacher input,
+#info_admin #AdminTeacher input,
+#info_teacher #AdminTeacher input {
+  height: 30px;
+  line-height: 30px;
+  width: 300px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+#info_student #AdminTeacher h4,
+#info_admin #AdminTeacher h4,
+#info_teacher #AdminTeacher h4 {
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 40px;
+  color: #666;
+  font-weight: normal;
+}
+#info_student #AdminTeacher h4 .stu_add,
+#info_admin #AdminTeacher h4 .stu_add,
+#info_teacher #AdminTeacher h4 .stu_add {
+  color: #888;
+  cursor: pointer;
+  margin-left: 20px;
+}
+#info_student #AdminTeacher h4 .stu_add:hover,
+#info_admin #AdminTeacher h4 .stu_add:hover,
+#info_teacher #AdminTeacher h4 .stu_add:hover {
+  color: #ff3333;
+}
+#info_student #AdminTeacher .admin_infor,
+#info_admin #AdminTeacher .admin_infor,
+#info_teacher #AdminTeacher .admin_infor {
+  margin-top: 10px;
+}
+#info_student #AdminTeacher .admin_infor li,
+#info_admin #AdminTeacher .admin_infor li,
+#info_teacher #AdminTeacher .admin_infor li {
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  margin-left: 100px;
+}
+#info_student #AdminTeacher .admin_infor li span,
+#info_admin #AdminTeacher .admin_infor li span,
+#info_teacher #AdminTeacher .admin_infor li span {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 100px;
+}
+#info_student #AdminTeacher .admin_infor li span:nth-child(3),
+#info_admin #AdminTeacher .admin_infor li span:nth-child(3),
+#info_teacher #AdminTeacher .admin_infor li span:nth-child(3) {
+  width: 200px;
+}
+#info_student #AdminTeacher .admin_infor li .stu_delete,
+#info_admin #AdminTeacher .admin_infor li .stu_delete,
+#info_teacher #AdminTeacher .admin_infor li .stu_delete,
+#info_student #AdminTeacher .admin_infor li .stu_revise,
+#info_admin #AdminTeacher .admin_infor li .stu_revise,
+#info_teacher #AdminTeacher .admin_infor li .stu_revise {
+  color: #888;
+  cursor: pointer;
+}
+#info_student #AdminTeacher .admin_infor li .stu_delete:hover,
+#info_admin #AdminTeacher .admin_infor li .stu_delete:hover,
+#info_teacher #AdminTeacher .admin_infor li .stu_delete:hover,
+#info_student #AdminTeacher .admin_infor li .stu_revise:hover,
+#info_admin #AdminTeacher .admin_infor li .stu_revise:hover,
+#info_teacher #AdminTeacher .admin_infor li .stu_revise:hover {
+  color: #ff3333;
+}
+#info_student #AdminAddstudent li,
+#info_admin #AdminAddstudent li,
+#info_teacher #AdminAddstudent li,
+#info_student #AdminRestudent li,
+#info_admin #AdminRestudent li,
+#info_teacher #AdminRestudent li,
+#info_student #AdminAddadmin li,
+#info_admin #AdminAddadmin li,
+#info_teacher #AdminAddadmin li,
+#info_student #AdminReadmin li,
+#info_admin #AdminReadmin li,
+#info_teacher #AdminReadmin li,
+#info_student #AdminAdditem li,
+#info_admin #AdminAdditem li,
+#info_teacher #AdminAdditem li,
+#info_student #AdminReitem li,
+#info_admin #AdminReitem li,
+#info_teacher #AdminReitem li,
+#info_student #AdminAddteacher li,
+#info_admin #AdminAddteacher li,
+#info_teacher #AdminAddteacher li,
+#info_student #AdminReteacher li,
+#info_admin #AdminReteacher li,
+#info_teacher #AdminReteacher li,
+#info_student #AdminAddnotice li,
+#info_admin #AdminAddnotice li,
+#info_teacher #AdminAddnotice li,
+#info_student #AdminRenotice li,
+#info_admin #AdminRenotice li,
+#info_teacher #AdminRenotice li,
+#info_student #AdminAddTestdis li,
+#info_admin #AdminAddTestdis li,
+#info_teacher #AdminAddTestdis li,
+#info_student #AdminReTestdis li,
+#info_admin #AdminReTestdis li,
+#info_teacher #AdminReTestdis li {
+  padding: 5px;
+  height: 30px;
+  line-height: 30px;
+  margin: auto auto;
+  width: 490px;
+}
+#info_student #AdminAddstudent li span,
+#info_admin #AdminAddstudent li span,
+#info_teacher #AdminAddstudent li span,
+#info_student #AdminRestudent li span,
+#info_admin #AdminRestudent li span,
+#info_teacher #AdminRestudent li span,
+#info_student #AdminAddadmin li span,
+#info_admin #AdminAddadmin li span,
+#info_teacher #AdminAddadmin li span,
+#info_student #AdminReadmin li span,
+#info_admin #AdminReadmin li span,
+#info_teacher #AdminReadmin li span,
+#info_student #AdminAdditem li span,
+#info_admin #AdminAdditem li span,
+#info_teacher #AdminAdditem li span,
+#info_student #AdminReitem li span,
+#info_admin #AdminReitem li span,
+#info_teacher #AdminReitem li span,
+#info_student #AdminAddteacher li span,
+#info_admin #AdminAddteacher li span,
+#info_teacher #AdminAddteacher li span,
+#info_student #AdminReteacher li span,
+#info_admin #AdminReteacher li span,
+#info_teacher #AdminReteacher li span,
+#info_student #AdminAddnotice li span,
+#info_admin #AdminAddnotice li span,
+#info_teacher #AdminAddnotice li span,
+#info_student #AdminRenotice li span,
+#info_admin #AdminRenotice li span,
+#info_teacher #AdminRenotice li span,
+#info_student #AdminAddTestdis li span,
+#info_admin #AdminAddTestdis li span,
+#info_teacher #AdminAddTestdis li span,
+#info_student #AdminReTestdis li span,
+#info_admin #AdminReTestdis li span,
+#info_teacher #AdminReTestdis li span {
+  height: 30px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 120px;
+}
+#info_student #AdminAddstudent li input,
+#info_admin #AdminAddstudent li input,
+#info_teacher #AdminAddstudent li input,
+#info_student #AdminRestudent li input,
+#info_admin #AdminRestudent li input,
+#info_teacher #AdminRestudent li input,
+#info_student #AdminAddadmin li input,
+#info_admin #AdminAddadmin li input,
+#info_teacher #AdminAddadmin li input,
+#info_student #AdminReadmin li input,
+#info_admin #AdminReadmin li input,
+#info_teacher #AdminReadmin li input,
+#info_student #AdminAdditem li input,
+#info_admin #AdminAdditem li input,
+#info_teacher #AdminAdditem li input,
+#info_student #AdminReitem li input,
+#info_admin #AdminReitem li input,
+#info_teacher #AdminReitem li input,
+#info_student #AdminAddteacher li input,
+#info_admin #AdminAddteacher li input,
+#info_teacher #AdminAddteacher li input,
+#info_student #AdminReteacher li input,
+#info_admin #AdminReteacher li input,
+#info_teacher #AdminReteacher li input,
+#info_student #AdminAddnotice li input,
+#info_admin #AdminAddnotice li input,
+#info_teacher #AdminAddnotice li input,
+#info_student #AdminRenotice li input,
+#info_admin #AdminRenotice li input,
+#info_teacher #AdminRenotice li input,
+#info_student #AdminAddTestdis li input,
+#info_admin #AdminAddTestdis li input,
+#info_teacher #AdminAddTestdis li input,
+#info_student #AdminReTestdis li input,
+#info_admin #AdminReTestdis li input,
+#info_teacher #AdminReTestdis li input {
+  width: 350px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  border: none;
+  float: left;
+  margin-left: 5px;
+}
+#info_student #AdminAddstudent .entering,
+#info_admin #AdminAddstudent .entering,
+#info_teacher #AdminAddstudent .entering,
+#info_student #AdminRestudent .entering,
+#info_admin #AdminRestudent .entering,
+#info_teacher #AdminRestudent .entering,
+#info_student #AdminAddadmin .entering,
+#info_admin #AdminAddadmin .entering,
+#info_teacher #AdminAddadmin .entering,
+#info_student #AdminReadmin .entering,
+#info_admin #AdminReadmin .entering,
+#info_teacher #AdminReadmin .entering,
+#info_student #AdminAdditem .entering,
+#info_admin #AdminAdditem .entering,
+#info_teacher #AdminAdditem .entering,
+#info_student #AdminReitem .entering,
+#info_admin #AdminReitem .entering,
+#info_teacher #AdminReitem .entering,
+#info_student #AdminAddteacher .entering,
+#info_admin #AdminAddteacher .entering,
+#info_teacher #AdminAddteacher .entering,
+#info_student #AdminReteacher .entering,
+#info_admin #AdminReteacher .entering,
+#info_teacher #AdminReteacher .entering,
+#info_student #AdminAddnotice .entering,
+#info_admin #AdminAddnotice .entering,
+#info_teacher #AdminAddnotice .entering,
+#info_student #AdminRenotice .entering,
+#info_admin #AdminRenotice .entering,
+#info_teacher #AdminRenotice .entering,
+#info_student #AdminAddTestdis .entering,
+#info_admin #AdminAddTestdis .entering,
+#info_teacher #AdminAddTestdis .entering,
+#info_student #AdminReTestdis .entering,
+#info_admin #AdminReTestdis .entering,
+#info_teacher #AdminReTestdis .entering {
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #d9acac, #f0f0f0, #9d9d9d);
+  cursor: pointer;
+}
+#info_student #AdminTest h4,
+#info_admin #AdminTest h4,
+#info_teacher #AdminTest h4 {
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 40px;
+  color: #666;
+  font-weight: normal;
+}
+#info_student #AdminTest h4 .stu_add,
+#info_admin #AdminTest h4 .stu_add,
+#info_teacher #AdminTest h4 .stu_add {
+  color: #888;
+  cursor: pointer;
+  margin-left: 20px;
+}
+#info_student #AdminTest h4 .stu_add:hover,
+#info_admin #AdminTest h4 .stu_add:hover,
+#info_teacher #AdminTest h4 .stu_add:hover {
+  color: #ff3333;
+}
+#info_student #AdminTest .admin_infor,
+#info_admin #AdminTest .admin_infor,
+#info_teacher #AdminTest .admin_infor {
+  margin-top: 10px;
+}
+#info_student #AdminTest .admin_infor li,
+#info_admin #AdminTest .admin_infor li,
+#info_teacher #AdminTest .admin_infor li {
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  margin-left: 10px;
+}
+#info_student #AdminTest .admin_infor li span,
+#info_admin #AdminTest .admin_infor li span,
+#info_teacher #AdminTest .admin_infor li span {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 100px;
+}
+#info_student #AdminTest .admin_infor li span:first-child,
+#info_admin #AdminTest .admin_infor li span:first-child,
+#info_teacher #AdminTest .admin_infor li span:first-child {
+  width: 280px;
+}
+#info_student #AdminTest .admin_infor li span:nth-child(3),
+#info_admin #AdminTest .admin_infor li span:nth-child(3),
+#info_teacher #AdminTest .admin_infor li span:nth-child(3) {
+  width: 200px;
+}
+#info_student #AdminTest .admin_infor li .stu_delete,
+#info_admin #AdminTest .admin_infor li .stu_delete,
+#info_teacher #AdminTest .admin_infor li .stu_delete,
+#info_student #AdminTest .admin_infor li .stu_revise,
+#info_admin #AdminTest .admin_infor li .stu_revise,
+#info_teacher #AdminTest .admin_infor li .stu_revise,
+#info_student #AdminTest .admin_infor li .stu_adddis,
+#info_admin #AdminTest .admin_infor li .stu_adddis,
+#info_teacher #AdminTest .admin_infor li .stu_adddis {
+  color: #888;
+  cursor: pointer;
+}
+#info_student #AdminTest .admin_infor li .stu_delete:hover,
+#info_admin #AdminTest .admin_infor li .stu_delete:hover,
+#info_teacher #AdminTest .admin_infor li .stu_delete:hover,
+#info_student #AdminTest .admin_infor li .stu_revise:hover,
+#info_admin #AdminTest .admin_infor li .stu_revise:hover,
+#info_teacher #AdminTest .admin_infor li .stu_revise:hover,
+#info_student #AdminTest .admin_infor li .stu_adddis:hover,
+#info_admin #AdminTest .admin_infor li .stu_adddis:hover,
+#info_teacher #AdminTest .admin_infor li .stu_adddis:hover {
+  color: #ff3333;
+}
+#info_student #AdminTestdis h4,
+#info_admin #AdminTestdis h4,
+#info_teacher #AdminTestdis h4,
+#info_student #TeacherTest h4,
+#info_admin #TeacherTest h4,
+#info_teacher #TeacherTest h4,
+#info_student #OrderTestok h4,
+#info_admin #OrderTestok h4,
+#info_teacher #OrderTestok h4 {
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 40px;
+  color: #666;
+  font-weight: normal;
+}
+#info_student #AdminTestdis h4 .stu_add,
+#info_admin #AdminTestdis h4 .stu_add,
+#info_teacher #AdminTestdis h4 .stu_add,
+#info_student #TeacherTest h4 .stu_add,
+#info_admin #TeacherTest h4 .stu_add,
+#info_teacher #TeacherTest h4 .stu_add,
+#info_student #OrderTestok h4 .stu_add,
+#info_admin #OrderTestok h4 .stu_add,
+#info_teacher #OrderTestok h4 .stu_add {
+  color: #888;
+  cursor: pointer;
+  margin-left: 20px;
+}
+#info_student #AdminTestdis h4 .stu_add:hover,
+#info_admin #AdminTestdis h4 .stu_add:hover,
+#info_teacher #AdminTestdis h4 .stu_add:hover,
+#info_student #TeacherTest h4 .stu_add:hover,
+#info_admin #TeacherTest h4 .stu_add:hover,
+#info_teacher #TeacherTest h4 .stu_add:hover,
+#info_student #OrderTestok h4 .stu_add:hover,
+#info_admin #OrderTestok h4 .stu_add:hover,
+#info_teacher #OrderTestok h4 .stu_add:hover {
+  color: #ff3333;
+}
+#info_student #AdminTestdis .admin_infor,
+#info_admin #AdminTestdis .admin_infor,
+#info_teacher #AdminTestdis .admin_infor,
+#info_student #TeacherTest .admin_infor,
+#info_admin #TeacherTest .admin_infor,
+#info_teacher #TeacherTest .admin_infor,
+#info_student #OrderTestok .admin_infor,
+#info_admin #OrderTestok .admin_infor,
+#info_teacher #OrderTestok .admin_infor {
+  margin-top: 10px;
+}
+#info_student #AdminTestdis .admin_infor li,
+#info_admin #AdminTestdis .admin_infor li,
+#info_teacher #AdminTestdis .admin_infor li,
+#info_student #TeacherTest .admin_infor li,
+#info_admin #TeacherTest .admin_infor li,
+#info_teacher #TeacherTest .admin_infor li,
+#info_student #OrderTestok .admin_infor li,
+#info_admin #OrderTestok .admin_infor li,
+#info_teacher #OrderTestok .admin_infor li {
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  margin-left: 20px;
+}
+#info_student #AdminTestdis .admin_infor li span,
+#info_admin #AdminTestdis .admin_infor li span,
+#info_teacher #AdminTestdis .admin_infor li span,
+#info_student #TeacherTest .admin_infor li span,
+#info_admin #TeacherTest .admin_infor li span,
+#info_teacher #TeacherTest .admin_infor li span,
+#info_student #OrderTestok .admin_infor li span,
+#info_admin #OrderTestok .admin_infor li span,
+#info_teacher #OrderTestok .admin_infor li span {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 100px;
+}
+#info_student #AdminTestdis .admin_infor li .stu_delete,
+#info_admin #AdminTestdis .admin_infor li .stu_delete,
+#info_teacher #AdminTestdis .admin_infor li .stu_delete,
+#info_student #TeacherTest .admin_infor li .stu_delete,
+#info_admin #TeacherTest .admin_infor li .stu_delete,
+#info_teacher #TeacherTest .admin_infor li .stu_delete,
+#info_student #OrderTestok .admin_infor li .stu_delete,
+#info_admin #OrderTestok .admin_infor li .stu_delete,
+#info_teacher #OrderTestok .admin_infor li .stu_delete,
+#info_student #AdminTestdis .admin_infor li .stu_revise,
+#info_admin #AdminTestdis .admin_infor li .stu_revise,
+#info_teacher #AdminTestdis .admin_infor li .stu_revise,
+#info_student #TeacherTest .admin_infor li .stu_revise,
+#info_admin #TeacherTest .admin_infor li .stu_revise,
+#info_teacher #TeacherTest .admin_infor li .stu_revise,
+#info_student #OrderTestok .admin_infor li .stu_revise,
+#info_admin #OrderTestok .admin_infor li .stu_revise,
+#info_teacher #OrderTestok .admin_infor li .stu_revise,
+#info_student #AdminTestdis .admin_infor li .stu_stu,
+#info_admin #AdminTestdis .admin_infor li .stu_stu,
+#info_teacher #AdminTestdis .admin_infor li .stu_stu,
+#info_student #TeacherTest .admin_infor li .stu_stu,
+#info_admin #TeacherTest .admin_infor li .stu_stu,
+#info_teacher #TeacherTest .admin_infor li .stu_stu,
+#info_student #OrderTestok .admin_infor li .stu_stu,
+#info_admin #OrderTestok .admin_infor li .stu_stu,
+#info_teacher #OrderTestok .admin_infor li .stu_stu,
+#info_student #AdminTestdis .admin_infor li .getgrade,
+#info_admin #AdminTestdis .admin_infor li .getgrade,
+#info_teacher #AdminTestdis .admin_infor li .getgrade,
+#info_student #TeacherTest .admin_infor li .getgrade,
+#info_admin #TeacherTest .admin_infor li .getgrade,
+#info_teacher #TeacherTest .admin_infor li .getgrade,
+#info_student #OrderTestok .admin_infor li .getgrade,
+#info_admin #OrderTestok .admin_infor li .getgrade,
+#info_teacher #OrderTestok .admin_infor li .getgrade,
+#info_student #AdminTestdis .admin_infor li .checkstu,
+#info_admin #AdminTestdis .admin_infor li .checkstu,
+#info_teacher #AdminTestdis .admin_infor li .checkstu,
+#info_student #TeacherTest .admin_infor li .checkstu,
+#info_admin #TeacherTest .admin_infor li .checkstu,
+#info_teacher #TeacherTest .admin_infor li .checkstu,
+#info_student #OrderTestok .admin_infor li .checkstu,
+#info_admin #OrderTestok .admin_infor li .checkstu,
+#info_teacher #OrderTestok .admin_infor li .checkstu {
+  width: 80px;
+  color: #888;
+  cursor: pointer;
+}
+#info_student #AdminTestdis .admin_infor li .stu_delete:hover,
+#info_admin #AdminTestdis .admin_infor li .stu_delete:hover,
+#info_teacher #AdminTestdis .admin_infor li .stu_delete:hover,
+#info_student #TeacherTest .admin_infor li .stu_delete:hover,
+#info_admin #TeacherTest .admin_infor li .stu_delete:hover,
+#info_teacher #TeacherTest .admin_infor li .stu_delete:hover,
+#info_student #OrderTestok .admin_infor li .stu_delete:hover,
+#info_admin #OrderTestok .admin_infor li .stu_delete:hover,
+#info_teacher #OrderTestok .admin_infor li .stu_delete:hover,
+#info_student #AdminTestdis .admin_infor li .stu_revise:hover,
+#info_admin #AdminTestdis .admin_infor li .stu_revise:hover,
+#info_teacher #AdminTestdis .admin_infor li .stu_revise:hover,
+#info_student #TeacherTest .admin_infor li .stu_revise:hover,
+#info_admin #TeacherTest .admin_infor li .stu_revise:hover,
+#info_teacher #TeacherTest .admin_infor li .stu_revise:hover,
+#info_student #OrderTestok .admin_infor li .stu_revise:hover,
+#info_admin #OrderTestok .admin_infor li .stu_revise:hover,
+#info_teacher #OrderTestok .admin_infor li .stu_revise:hover,
+#info_student #AdminTestdis .admin_infor li .stu_stu:hover,
+#info_admin #AdminTestdis .admin_infor li .stu_stu:hover,
+#info_teacher #AdminTestdis .admin_infor li .stu_stu:hover,
+#info_student #TeacherTest .admin_infor li .stu_stu:hover,
+#info_admin #TeacherTest .admin_infor li .stu_stu:hover,
+#info_teacher #TeacherTest .admin_infor li .stu_stu:hover,
+#info_student #OrderTestok .admin_infor li .stu_stu:hover,
+#info_admin #OrderTestok .admin_infor li .stu_stu:hover,
+#info_teacher #OrderTestok .admin_infor li .stu_stu:hover,
+#info_student #AdminTestdis .admin_infor li .getgrade:hover,
+#info_admin #AdminTestdis .admin_infor li .getgrade:hover,
+#info_teacher #AdminTestdis .admin_infor li .getgrade:hover,
+#info_student #TeacherTest .admin_infor li .getgrade:hover,
+#info_admin #TeacherTest .admin_infor li .getgrade:hover,
+#info_teacher #TeacherTest .admin_infor li .getgrade:hover,
+#info_student #OrderTestok .admin_infor li .getgrade:hover,
+#info_admin #OrderTestok .admin_infor li .getgrade:hover,
+#info_teacher #OrderTestok .admin_infor li .getgrade:hover,
+#info_student #AdminTestdis .admin_infor li .checkstu:hover,
+#info_admin #AdminTestdis .admin_infor li .checkstu:hover,
+#info_teacher #AdminTestdis .admin_infor li .checkstu:hover,
+#info_student #TeacherTest .admin_infor li .checkstu:hover,
+#info_admin #TeacherTest .admin_infor li .checkstu:hover,
+#info_teacher #TeacherTest .admin_infor li .checkstu:hover,
+#info_student #OrderTestok .admin_infor li .checkstu:hover,
+#info_admin #OrderTestok .admin_infor li .checkstu:hover,
+#info_teacher #OrderTestok .admin_infor li .checkstu:hover {
+  color: #ff3333;
+}
+#info_student #AdminTestdis .admin_infor li .stu_s,
+#info_admin #AdminTestdis .admin_infor li .stu_s,
+#info_teacher #AdminTestdis .admin_infor li .stu_s,
+#info_student #TeacherTest .admin_infor li .stu_s,
+#info_admin #TeacherTest .admin_infor li .stu_s,
+#info_teacher #TeacherTest .admin_infor li .stu_s,
+#info_student #OrderTestok .admin_infor li .stu_s,
+#info_admin #OrderTestok .admin_infor li .stu_s,
+#info_teacher #OrderTestok .admin_infor li .stu_s,
+#info_student #AdminTestdis .admin_infor li .stu_stu,
+#info_admin #AdminTestdis .admin_infor li .stu_stu,
+#info_teacher #AdminTestdis .admin_infor li .stu_stu,
+#info_student #TeacherTest .admin_infor li .stu_stu,
+#info_admin #TeacherTest .admin_infor li .stu_stu,
+#info_teacher #TeacherTest .admin_infor li .stu_stu,
+#info_student #OrderTestok .admin_infor li .stu_stu,
+#info_admin #OrderTestok .admin_infor li .stu_stu,
+#info_teacher #OrderTestok .admin_infor li .stu_stu,
+#info_student #AdminTestdis .admin_infor li .getgrade,
+#info_admin #AdminTestdis .admin_infor li .getgrade,
+#info_teacher #AdminTestdis .admin_infor li .getgrade,
+#info_student #TeacherTest .admin_infor li .getgrade,
+#info_admin #TeacherTest .admin_infor li .getgrade,
+#info_teacher #TeacherTest .admin_infor li .getgrade,
+#info_student #OrderTestok .admin_infor li .getgrade,
+#info_admin #OrderTestok .admin_infor li .getgrade,
+#info_teacher #OrderTestok .admin_infor li .getgrade,
+#info_student #AdminTestdis .admin_infor li .checkstu,
+#info_admin #AdminTestdis .admin_infor li .checkstu,
+#info_teacher #AdminTestdis .admin_infor li .checkstu,
+#info_student #TeacherTest .admin_infor li .checkstu,
+#info_admin #TeacherTest .admin_infor li .checkstu,
+#info_teacher #TeacherTest .admin_infor li .checkstu,
+#info_student #OrderTestok .admin_infor li .checkstu,
+#info_admin #OrderTestok .admin_infor li .checkstu,
+#info_teacher #OrderTestok .admin_infor li .checkstu {
+  width: 100px;
+}
+#info_student #AdminTestdis .admin_infor li .stu_del,
+#info_admin #AdminTestdis .admin_infor li .stu_del,
+#info_teacher #AdminTestdis .admin_infor li .stu_del,
+#info_student #TeacherTest .admin_infor li .stu_del,
+#info_admin #TeacherTest .admin_infor li .stu_del,
+#info_teacher #TeacherTest .admin_infor li .stu_del,
+#info_student #OrderTestok .admin_infor li .stu_del,
+#info_admin #OrderTestok .admin_infor li .stu_del,
+#info_teacher #OrderTestok .admin_infor li .stu_del,
+#info_student #AdminTestdis .admin_infor li .stu_re,
+#info_admin #AdminTestdis .admin_infor li .stu_re,
+#info_teacher #AdminTestdis .admin_infor li .stu_re,
+#info_student #TeacherTest .admin_infor li .stu_re,
+#info_admin #TeacherTest .admin_infor li .stu_re,
+#info_teacher #TeacherTest .admin_infor li .stu_re,
+#info_student #OrderTestok .admin_infor li .stu_re,
+#info_admin #OrderTestok .admin_infor li .stu_re,
+#info_teacher #OrderTestok .admin_infor li .stu_re {
+  width: 80px;
+}
+#info_student #AdminTestdis .admin_infor li .item_name,
+#info_admin #AdminTestdis .admin_infor li .item_name,
+#info_teacher #AdminTestdis .admin_infor li .item_name,
+#info_student #TeacherTest .admin_infor li .item_name,
+#info_admin #TeacherTest .admin_infor li .item_name,
+#info_teacher #TeacherTest .admin_infor li .item_name,
+#info_student #OrderTestok .admin_infor li .item_name,
+#info_admin #OrderTestok .admin_infor li .item_name,
+#info_teacher #OrderTestok .admin_infor li .item_name,
+#info_student #AdminTestdis .admin_infor li .it_name,
+#info_admin #AdminTestdis .admin_infor li .it_name,
+#info_teacher #AdminTestdis .admin_infor li .it_name,
+#info_student #TeacherTest .admin_infor li .it_name,
+#info_admin #TeacherTest .admin_infor li .it_name,
+#info_teacher #TeacherTest .admin_infor li .it_name,
+#info_student #OrderTestok .admin_infor li .it_name,
+#info_admin #OrderTestok .admin_infor li .it_name,
+#info_teacher #OrderTestok .admin_infor li .it_name,
+#info_student #AdminTestdis .admin_infor li .stu_item,
+#info_admin #AdminTestdis .admin_infor li .stu_item,
+#info_teacher #AdminTestdis .admin_infor li .stu_item,
+#info_student #TeacherTest .admin_infor li .stu_item,
+#info_admin #TeacherTest .admin_infor li .stu_item,
+#info_teacher #TeacherTest .admin_infor li .stu_item,
+#info_student #OrderTestok .admin_infor li .stu_item,
+#info_admin #OrderTestok .admin_infor li .stu_item,
+#info_teacher #OrderTestok .admin_infor li .stu_item {
+  width: 200px;
+}
+#info_student #AdminTestdis .teacher_infor,
+#info_admin #AdminTestdis .teacher_infor,
+#info_teacher #AdminTestdis .teacher_infor,
+#info_student #TeacherTest .teacher_infor,
+#info_admin #TeacherTest .teacher_infor,
+#info_teacher #TeacherTest .teacher_infor,
+#info_student #OrderTestok .teacher_infor,
+#info_admin #OrderTestok .teacher_infor,
+#info_teacher #OrderTestok .teacher_infor {
+  margin-top: 10px;
+  margin-left: 80px;
+}
+#info_student #AdminTestdis .teacher_infor li,
+#info_admin #AdminTestdis .teacher_infor li,
+#info_teacher #AdminTestdis .teacher_infor li,
+#info_student #TeacherTest .teacher_infor li,
+#info_admin #TeacherTest .teacher_infor li,
+#info_teacher #TeacherTest .teacher_infor li,
+#info_student #OrderTestok .teacher_infor li,
+#info_admin #OrderTestok .teacher_infor li,
+#info_teacher #OrderTestok .teacher_infor li {
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  margin-left: 20px;
+}
+#info_student #AdminTestdis .teacher_infor li span,
+#info_admin #AdminTestdis .teacher_infor li span,
+#info_teacher #AdminTestdis .teacher_infor li span,
+#info_student #TeacherTest .teacher_infor li span,
+#info_admin #TeacherTest .teacher_infor li span,
+#info_teacher #TeacherTest .teacher_infor li span,
+#info_student #OrderTestok .teacher_infor li span,
+#info_admin #OrderTestok .teacher_infor li span,
+#info_teacher #OrderTestok .teacher_infor li span {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 100px;
+}
+#info_student #AdminTestdis .teacher_infor li .stu_delete,
+#info_admin #AdminTestdis .teacher_infor li .stu_delete,
+#info_teacher #AdminTestdis .teacher_infor li .stu_delete,
+#info_student #TeacherTest .teacher_infor li .stu_delete,
+#info_admin #TeacherTest .teacher_infor li .stu_delete,
+#info_teacher #TeacherTest .teacher_infor li .stu_delete,
+#info_student #OrderTestok .teacher_infor li .stu_delete,
+#info_admin #OrderTestok .teacher_infor li .stu_delete,
+#info_teacher #OrderTestok .teacher_infor li .stu_delete,
+#info_student #AdminTestdis .teacher_infor li .stu_revise,
+#info_admin #AdminTestdis .teacher_infor li .stu_revise,
+#info_teacher #AdminTestdis .teacher_infor li .stu_revise,
+#info_student #TeacherTest .teacher_infor li .stu_revise,
+#info_admin #TeacherTest .teacher_infor li .stu_revise,
+#info_teacher #TeacherTest .teacher_infor li .stu_revise,
+#info_student #OrderTestok .teacher_infor li .stu_revise,
+#info_admin #OrderTestok .teacher_infor li .stu_revise,
+#info_teacher #OrderTestok .teacher_infor li .stu_revise,
+#info_student #AdminTestdis .teacher_infor li .stu_stu,
+#info_admin #AdminTestdis .teacher_infor li .stu_stu,
+#info_teacher #AdminTestdis .teacher_infor li .stu_stu,
+#info_student #TeacherTest .teacher_infor li .stu_stu,
+#info_admin #TeacherTest .teacher_infor li .stu_stu,
+#info_teacher #TeacherTest .teacher_infor li .stu_stu,
+#info_student #OrderTestok .teacher_infor li .stu_stu,
+#info_admin #OrderTestok .teacher_infor li .stu_stu,
+#info_teacher #OrderTestok .teacher_infor li .stu_stu,
+#info_student #AdminTestdis .teacher_infor li .getgrade,
+#info_admin #AdminTestdis .teacher_infor li .getgrade,
+#info_teacher #AdminTestdis .teacher_infor li .getgrade,
+#info_student #TeacherTest .teacher_infor li .getgrade,
+#info_admin #TeacherTest .teacher_infor li .getgrade,
+#info_teacher #TeacherTest .teacher_infor li .getgrade,
+#info_student #OrderTestok .teacher_infor li .getgrade,
+#info_admin #OrderTestok .teacher_infor li .getgrade,
+#info_teacher #OrderTestok .teacher_infor li .getgrade,
+#info_student #AdminTestdis .teacher_infor li .checkstu,
+#info_admin #AdminTestdis .teacher_infor li .checkstu,
+#info_teacher #AdminTestdis .teacher_infor li .checkstu,
+#info_student #TeacherTest .teacher_infor li .checkstu,
+#info_admin #TeacherTest .teacher_infor li .checkstu,
+#info_teacher #TeacherTest .teacher_infor li .checkstu,
+#info_student #OrderTestok .teacher_infor li .checkstu,
+#info_admin #OrderTestok .teacher_infor li .checkstu,
+#info_teacher #OrderTestok .teacher_infor li .checkstu {
+  width: 80px;
+  color: #888;
+  cursor: pointer;
+}
+#info_student #AdminTestdis .teacher_infor li .stu_delete:hover,
+#info_admin #AdminTestdis .teacher_infor li .stu_delete:hover,
+#info_teacher #AdminTestdis .teacher_infor li .stu_delete:hover,
+#info_student #TeacherTest .teacher_infor li .stu_delete:hover,
+#info_admin #TeacherTest .teacher_infor li .stu_delete:hover,
+#info_teacher #TeacherTest .teacher_infor li .stu_delete:hover,
+#info_student #OrderTestok .teacher_infor li .stu_delete:hover,
+#info_admin #OrderTestok .teacher_infor li .stu_delete:hover,
+#info_teacher #OrderTestok .teacher_infor li .stu_delete:hover,
+#info_student #AdminTestdis .teacher_infor li .stu_revise:hover,
+#info_admin #AdminTestdis .teacher_infor li .stu_revise:hover,
+#info_teacher #AdminTestdis .teacher_infor li .stu_revise:hover,
+#info_student #TeacherTest .teacher_infor li .stu_revise:hover,
+#info_admin #TeacherTest .teacher_infor li .stu_revise:hover,
+#info_teacher #TeacherTest .teacher_infor li .stu_revise:hover,
+#info_student #OrderTestok .teacher_infor li .stu_revise:hover,
+#info_admin #OrderTestok .teacher_infor li .stu_revise:hover,
+#info_teacher #OrderTestok .teacher_infor li .stu_revise:hover,
+#info_student #AdminTestdis .teacher_infor li .stu_stu:hover,
+#info_admin #AdminTestdis .teacher_infor li .stu_stu:hover,
+#info_teacher #AdminTestdis .teacher_infor li .stu_stu:hover,
+#info_student #TeacherTest .teacher_infor li .stu_stu:hover,
+#info_admin #TeacherTest .teacher_infor li .stu_stu:hover,
+#info_teacher #TeacherTest .teacher_infor li .stu_stu:hover,
+#info_student #OrderTestok .teacher_infor li .stu_stu:hover,
+#info_admin #OrderTestok .teacher_infor li .stu_stu:hover,
+#info_teacher #OrderTestok .teacher_infor li .stu_stu:hover,
+#info_student #AdminTestdis .teacher_infor li .getgrade:hover,
+#info_admin #AdminTestdis .teacher_infor li .getgrade:hover,
+#info_teacher #AdminTestdis .teacher_infor li .getgrade:hover,
+#info_student #TeacherTest .teacher_infor li .getgrade:hover,
+#info_admin #TeacherTest .teacher_infor li .getgrade:hover,
+#info_teacher #TeacherTest .teacher_infor li .getgrade:hover,
+#info_student #OrderTestok .teacher_infor li .getgrade:hover,
+#info_admin #OrderTestok .teacher_infor li .getgrade:hover,
+#info_teacher #OrderTestok .teacher_infor li .getgrade:hover,
+#info_student #AdminTestdis .teacher_infor li .checkstu:hover,
+#info_admin #AdminTestdis .teacher_infor li .checkstu:hover,
+#info_teacher #AdminTestdis .teacher_infor li .checkstu:hover,
+#info_student #TeacherTest .teacher_infor li .checkstu:hover,
+#info_admin #TeacherTest .teacher_infor li .checkstu:hover,
+#info_teacher #TeacherTest .teacher_infor li .checkstu:hover,
+#info_student #OrderTestok .teacher_infor li .checkstu:hover,
+#info_admin #OrderTestok .teacher_infor li .checkstu:hover,
+#info_teacher #OrderTestok .teacher_infor li .checkstu:hover {
+  color: #ff3333;
+}
+#info_student #AdminTestdis .teacher_infor li .stu_s,
+#info_admin #AdminTestdis .teacher_infor li .stu_s,
+#info_teacher #AdminTestdis .teacher_infor li .stu_s,
+#info_student #TeacherTest .teacher_infor li .stu_s,
+#info_admin #TeacherTest .teacher_infor li .stu_s,
+#info_teacher #TeacherTest .teacher_infor li .stu_s,
+#info_student #OrderTestok .teacher_infor li .stu_s,
+#info_admin #OrderTestok .teacher_infor li .stu_s,
+#info_teacher #OrderTestok .teacher_infor li .stu_s,
+#info_student #AdminTestdis .teacher_infor li .stu_stu,
+#info_admin #AdminTestdis .teacher_infor li .stu_stu,
+#info_teacher #AdminTestdis .teacher_infor li .stu_stu,
+#info_student #TeacherTest .teacher_infor li .stu_stu,
+#info_admin #TeacherTest .teacher_infor li .stu_stu,
+#info_teacher #TeacherTest .teacher_infor li .stu_stu,
+#info_student #OrderTestok .teacher_infor li .stu_stu,
+#info_admin #OrderTestok .teacher_infor li .stu_stu,
+#info_teacher #OrderTestok .teacher_infor li .stu_stu,
+#info_student #AdminTestdis .teacher_infor li .getgrade,
+#info_admin #AdminTestdis .teacher_infor li .getgrade,
+#info_teacher #AdminTestdis .teacher_infor li .getgrade,
+#info_student #TeacherTest .teacher_infor li .getgrade,
+#info_admin #TeacherTest .teacher_infor li .getgrade,
+#info_teacher #TeacherTest .teacher_infor li .getgrade,
+#info_student #OrderTestok .teacher_infor li .getgrade,
+#info_admin #OrderTestok .teacher_infor li .getgrade,
+#info_teacher #OrderTestok .teacher_infor li .getgrade,
+#info_student #AdminTestdis .teacher_infor li .checkstu,
+#info_admin #AdminTestdis .teacher_infor li .checkstu,
+#info_teacher #AdminTestdis .teacher_infor li .checkstu,
+#info_student #TeacherTest .teacher_infor li .checkstu,
+#info_admin #TeacherTest .teacher_infor li .checkstu,
+#info_teacher #TeacherTest .teacher_infor li .checkstu,
+#info_student #OrderTestok .teacher_infor li .checkstu,
+#info_admin #OrderTestok .teacher_infor li .checkstu,
+#info_teacher #OrderTestok .teacher_infor li .checkstu {
+  width: 100px;
+}
+#info_student #AdminTestdis .teacher_infor li .stu_del,
+#info_admin #AdminTestdis .teacher_infor li .stu_del,
+#info_teacher #AdminTestdis .teacher_infor li .stu_del,
+#info_student #TeacherTest .teacher_infor li .stu_del,
+#info_admin #TeacherTest .teacher_infor li .stu_del,
+#info_teacher #TeacherTest .teacher_infor li .stu_del,
+#info_student #OrderTestok .teacher_infor li .stu_del,
+#info_admin #OrderTestok .teacher_infor li .stu_del,
+#info_teacher #OrderTestok .teacher_infor li .stu_del,
+#info_student #AdminTestdis .teacher_infor li .stu_re,
+#info_admin #AdminTestdis .teacher_infor li .stu_re,
+#info_teacher #AdminTestdis .teacher_infor li .stu_re,
+#info_student #TeacherTest .teacher_infor li .stu_re,
+#info_admin #TeacherTest .teacher_infor li .stu_re,
+#info_teacher #TeacherTest .teacher_infor li .stu_re,
+#info_student #OrderTestok .teacher_infor li .stu_re,
+#info_admin #OrderTestok .teacher_infor li .stu_re,
+#info_teacher #OrderTestok .teacher_infor li .stu_re {
+  width: 80px;
+}
+#info_student #AdminTestdis .teacher_infor li .item_name,
+#info_admin #AdminTestdis .teacher_infor li .item_name,
+#info_teacher #AdminTestdis .teacher_infor li .item_name,
+#info_student #TeacherTest .teacher_infor li .item_name,
+#info_admin #TeacherTest .teacher_infor li .item_name,
+#info_teacher #TeacherTest .teacher_infor li .item_name,
+#info_student #OrderTestok .teacher_infor li .item_name,
+#info_admin #OrderTestok .teacher_infor li .item_name,
+#info_teacher #OrderTestok .teacher_infor li .item_name,
+#info_student #AdminTestdis .teacher_infor li .it_name,
+#info_admin #AdminTestdis .teacher_infor li .it_name,
+#info_teacher #AdminTestdis .teacher_infor li .it_name,
+#info_student #TeacherTest .teacher_infor li .it_name,
+#info_admin #TeacherTest .teacher_infor li .it_name,
+#info_teacher #TeacherTest .teacher_infor li .it_name,
+#info_student #OrderTestok .teacher_infor li .it_name,
+#info_admin #OrderTestok .teacher_infor li .it_name,
+#info_teacher #OrderTestok .teacher_infor li .it_name,
+#info_student #AdminTestdis .teacher_infor li .stu_item,
+#info_admin #AdminTestdis .teacher_infor li .stu_item,
+#info_teacher #AdminTestdis .teacher_infor li .stu_item,
+#info_student #TeacherTest .teacher_infor li .stu_item,
+#info_admin #TeacherTest .teacher_infor li .stu_item,
+#info_teacher #TeacherTest .teacher_infor li .stu_item,
+#info_student #OrderTestok .teacher_infor li .stu_item,
+#info_admin #OrderTestok .teacher_infor li .stu_item,
+#info_teacher #OrderTestok .teacher_infor li .stu_item {
+  width: 200px;
+}
+#info_student #AdminTestdis .student_infor,
+#info_admin #AdminTestdis .student_infor,
+#info_teacher #AdminTestdis .student_infor,
+#info_student #TeacherTest .student_infor,
+#info_admin #TeacherTest .student_infor,
+#info_teacher #TeacherTest .student_infor,
+#info_student #OrderTestok .student_infor,
+#info_admin #OrderTestok .student_infor,
+#info_teacher #OrderTestok .student_infor {
+  margin-top: 10px;
+  margin-left: 80px;
+}
+#info_student #AdminTestdis .student_infor li,
+#info_admin #AdminTestdis .student_infor li,
+#info_teacher #AdminTestdis .student_infor li,
+#info_student #TeacherTest .student_infor li,
+#info_admin #TeacherTest .student_infor li,
+#info_teacher #TeacherTest .student_infor li,
+#info_student #OrderTestok .student_infor li,
+#info_admin #OrderTestok .student_infor li,
+#info_teacher #OrderTestok .student_infor li {
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  margin-left: 20px;
+}
+#info_student #AdminTestdis .student_infor li span,
+#info_admin #AdminTestdis .student_infor li span,
+#info_teacher #AdminTestdis .student_infor li span,
+#info_student #TeacherTest .student_infor li span,
+#info_admin #TeacherTest .student_infor li span,
+#info_teacher #TeacherTest .student_infor li span,
+#info_student #OrderTestok .student_infor li span,
+#info_admin #OrderTestok .student_infor li span,
+#info_teacher #OrderTestok .student_infor li span {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 100px;
+}
+#info_student #AdminTestdis .student_infor li .stu_delete,
+#info_admin #AdminTestdis .student_infor li .stu_delete,
+#info_teacher #AdminTestdis .student_infor li .stu_delete,
+#info_student #TeacherTest .student_infor li .stu_delete,
+#info_admin #TeacherTest .student_infor li .stu_delete,
+#info_teacher #TeacherTest .student_infor li .stu_delete,
+#info_student #OrderTestok .student_infor li .stu_delete,
+#info_admin #OrderTestok .student_infor li .stu_delete,
+#info_teacher #OrderTestok .student_infor li .stu_delete,
+#info_student #AdminTestdis .student_infor li .stu_revise,
+#info_admin #AdminTestdis .student_infor li .stu_revise,
+#info_teacher #AdminTestdis .student_infor li .stu_revise,
+#info_student #TeacherTest .student_infor li .stu_revise,
+#info_admin #TeacherTest .student_infor li .stu_revise,
+#info_teacher #TeacherTest .student_infor li .stu_revise,
+#info_student #OrderTestok .student_infor li .stu_revise,
+#info_admin #OrderTestok .student_infor li .stu_revise,
+#info_teacher #OrderTestok .student_infor li .stu_revise,
+#info_student #AdminTestdis .student_infor li .stu_stu,
+#info_admin #AdminTestdis .student_infor li .stu_stu,
+#info_teacher #AdminTestdis .student_infor li .stu_stu,
+#info_student #TeacherTest .student_infor li .stu_stu,
+#info_admin #TeacherTest .student_infor li .stu_stu,
+#info_teacher #TeacherTest .student_infor li .stu_stu,
+#info_student #OrderTestok .student_infor li .stu_stu,
+#info_admin #OrderTestok .student_infor li .stu_stu,
+#info_teacher #OrderTestok .student_infor li .stu_stu,
+#info_student #AdminTestdis .student_infor li .getgrade,
+#info_admin #AdminTestdis .student_infor li .getgrade,
+#info_teacher #AdminTestdis .student_infor li .getgrade,
+#info_student #TeacherTest .student_infor li .getgrade,
+#info_admin #TeacherTest .student_infor li .getgrade,
+#info_teacher #TeacherTest .student_infor li .getgrade,
+#info_student #OrderTestok .student_infor li .getgrade,
+#info_admin #OrderTestok .student_infor li .getgrade,
+#info_teacher #OrderTestok .student_infor li .getgrade,
+#info_student #AdminTestdis .student_infor li .checkstu,
+#info_admin #AdminTestdis .student_infor li .checkstu,
+#info_teacher #AdminTestdis .student_infor li .checkstu,
+#info_student #TeacherTest .student_infor li .checkstu,
+#info_admin #TeacherTest .student_infor li .checkstu,
+#info_teacher #TeacherTest .student_infor li .checkstu,
+#info_student #OrderTestok .student_infor li .checkstu,
+#info_admin #OrderTestok .student_infor li .checkstu,
+#info_teacher #OrderTestok .student_infor li .checkstu {
+  width: 80px;
+  color: #888;
+  cursor: pointer;
+}
+#info_student #AdminTestdis .student_infor li .stu_delete:hover,
+#info_admin #AdminTestdis .student_infor li .stu_delete:hover,
+#info_teacher #AdminTestdis .student_infor li .stu_delete:hover,
+#info_student #TeacherTest .student_infor li .stu_delete:hover,
+#info_admin #TeacherTest .student_infor li .stu_delete:hover,
+#info_teacher #TeacherTest .student_infor li .stu_delete:hover,
+#info_student #OrderTestok .student_infor li .stu_delete:hover,
+#info_admin #OrderTestok .student_infor li .stu_delete:hover,
+#info_teacher #OrderTestok .student_infor li .stu_delete:hover,
+#info_student #AdminTestdis .student_infor li .stu_revise:hover,
+#info_admin #AdminTestdis .student_infor li .stu_revise:hover,
+#info_teacher #AdminTestdis .student_infor li .stu_revise:hover,
+#info_student #TeacherTest .student_infor li .stu_revise:hover,
+#info_admin #TeacherTest .student_infor li .stu_revise:hover,
+#info_teacher #TeacherTest .student_infor li .stu_revise:hover,
+#info_student #OrderTestok .student_infor li .stu_revise:hover,
+#info_admin #OrderTestok .student_infor li .stu_revise:hover,
+#info_teacher #OrderTestok .student_infor li .stu_revise:hover,
+#info_student #AdminTestdis .student_infor li .stu_stu:hover,
+#info_admin #AdminTestdis .student_infor li .stu_stu:hover,
+#info_teacher #AdminTestdis .student_infor li .stu_stu:hover,
+#info_student #TeacherTest .student_infor li .stu_stu:hover,
+#info_admin #TeacherTest .student_infor li .stu_stu:hover,
+#info_teacher #TeacherTest .student_infor li .stu_stu:hover,
+#info_student #OrderTestok .student_infor li .stu_stu:hover,
+#info_admin #OrderTestok .student_infor li .stu_stu:hover,
+#info_teacher #OrderTestok .student_infor li .stu_stu:hover,
+#info_student #AdminTestdis .student_infor li .getgrade:hover,
+#info_admin #AdminTestdis .student_infor li .getgrade:hover,
+#info_teacher #AdminTestdis .student_infor li .getgrade:hover,
+#info_student #TeacherTest .student_infor li .getgrade:hover,
+#info_admin #TeacherTest .student_infor li .getgrade:hover,
+#info_teacher #TeacherTest .student_infor li .getgrade:hover,
+#info_student #OrderTestok .student_infor li .getgrade:hover,
+#info_admin #OrderTestok .student_infor li .getgrade:hover,
+#info_teacher #OrderTestok .student_infor li .getgrade:hover,
+#info_student #AdminTestdis .student_infor li .checkstu:hover,
+#info_admin #AdminTestdis .student_infor li .checkstu:hover,
+#info_teacher #AdminTestdis .student_infor li .checkstu:hover,
+#info_student #TeacherTest .student_infor li .checkstu:hover,
+#info_admin #TeacherTest .student_infor li .checkstu:hover,
+#info_teacher #TeacherTest .student_infor li .checkstu:hover,
+#info_student #OrderTestok .student_infor li .checkstu:hover,
+#info_admin #OrderTestok .student_infor li .checkstu:hover,
+#info_teacher #OrderTestok .student_infor li .checkstu:hover {
+  color: #ff3333;
+}
+#info_student #AdminTestdis .student_infor li .stu_s,
+#info_admin #AdminTestdis .student_infor li .stu_s,
+#info_teacher #AdminTestdis .student_infor li .stu_s,
+#info_student #TeacherTest .student_infor li .stu_s,
+#info_admin #TeacherTest .student_infor li .stu_s,
+#info_teacher #TeacherTest .student_infor li .stu_s,
+#info_student #OrderTestok .student_infor li .stu_s,
+#info_admin #OrderTestok .student_infor li .stu_s,
+#info_teacher #OrderTestok .student_infor li .stu_s,
+#info_student #AdminTestdis .student_infor li .stu_stu,
+#info_admin #AdminTestdis .student_infor li .stu_stu,
+#info_teacher #AdminTestdis .student_infor li .stu_stu,
+#info_student #TeacherTest .student_infor li .stu_stu,
+#info_admin #TeacherTest .student_infor li .stu_stu,
+#info_teacher #TeacherTest .student_infor li .stu_stu,
+#info_student #OrderTestok .student_infor li .stu_stu,
+#info_admin #OrderTestok .student_infor li .stu_stu,
+#info_teacher #OrderTestok .student_infor li .stu_stu,
+#info_student #AdminTestdis .student_infor li .getgrade,
+#info_admin #AdminTestdis .student_infor li .getgrade,
+#info_teacher #AdminTestdis .student_infor li .getgrade,
+#info_student #TeacherTest .student_infor li .getgrade,
+#info_admin #TeacherTest .student_infor li .getgrade,
+#info_teacher #TeacherTest .student_infor li .getgrade,
+#info_student #OrderTestok .student_infor li .getgrade,
+#info_admin #OrderTestok .student_infor li .getgrade,
+#info_teacher #OrderTestok .student_infor li .getgrade,
+#info_student #AdminTestdis .student_infor li .checkstu,
+#info_admin #AdminTestdis .student_infor li .checkstu,
+#info_teacher #AdminTestdis .student_infor li .checkstu,
+#info_student #TeacherTest .student_infor li .checkstu,
+#info_admin #TeacherTest .student_infor li .checkstu,
+#info_teacher #TeacherTest .student_infor li .checkstu,
+#info_student #OrderTestok .student_infor li .checkstu,
+#info_admin #OrderTestok .student_infor li .checkstu,
+#info_teacher #OrderTestok .student_infor li .checkstu {
+  width: 100px;
+}
+#info_student #AdminTestdis .student_infor li .stu_del,
+#info_admin #AdminTestdis .student_infor li .stu_del,
+#info_teacher #AdminTestdis .student_infor li .stu_del,
+#info_student #TeacherTest .student_infor li .stu_del,
+#info_admin #TeacherTest .student_infor li .stu_del,
+#info_teacher #TeacherTest .student_infor li .stu_del,
+#info_student #OrderTestok .student_infor li .stu_del,
+#info_admin #OrderTestok .student_infor li .stu_del,
+#info_teacher #OrderTestok .student_infor li .stu_del,
+#info_student #AdminTestdis .student_infor li .stu_re,
+#info_admin #AdminTestdis .student_infor li .stu_re,
+#info_teacher #AdminTestdis .student_infor li .stu_re,
+#info_student #TeacherTest .student_infor li .stu_re,
+#info_admin #TeacherTest .student_infor li .stu_re,
+#info_teacher #TeacherTest .student_infor li .stu_re,
+#info_student #OrderTestok .student_infor li .stu_re,
+#info_admin #OrderTestok .student_infor li .stu_re,
+#info_teacher #OrderTestok .student_infor li .stu_re {
+  width: 80px;
+}
+#info_student #AdminTestdis .student_infor li .item_name,
+#info_admin #AdminTestdis .student_infor li .item_name,
+#info_teacher #AdminTestdis .student_infor li .item_name,
+#info_student #TeacherTest .student_infor li .item_name,
+#info_admin #TeacherTest .student_infor li .item_name,
+#info_teacher #TeacherTest .student_infor li .item_name,
+#info_student #OrderTestok .student_infor li .item_name,
+#info_admin #OrderTestok .student_infor li .item_name,
+#info_teacher #OrderTestok .student_infor li .item_name,
+#info_student #AdminTestdis .student_infor li .it_name,
+#info_admin #AdminTestdis .student_infor li .it_name,
+#info_teacher #AdminTestdis .student_infor li .it_name,
+#info_student #TeacherTest .student_infor li .it_name,
+#info_admin #TeacherTest .student_infor li .it_name,
+#info_teacher #TeacherTest .student_infor li .it_name,
+#info_student #OrderTestok .student_infor li .it_name,
+#info_admin #OrderTestok .student_infor li .it_name,
+#info_teacher #OrderTestok .student_infor li .it_name,
+#info_student #AdminTestdis .student_infor li .stu_item,
+#info_admin #AdminTestdis .student_infor li .stu_item,
+#info_teacher #AdminTestdis .student_infor li .stu_item,
+#info_student #TeacherTest .student_infor li .stu_item,
+#info_admin #TeacherTest .student_infor li .stu_item,
+#info_teacher #TeacherTest .student_infor li .stu_item,
+#info_student #OrderTestok .student_infor li .stu_item,
+#info_admin #OrderTestok .student_infor li .stu_item,
+#info_teacher #OrderTestok .student_infor li .stu_item {
+  width: 200px;
+}
+#info_student #OrderTest h4,
+#info_admin #OrderTest h4,
+#info_teacher #OrderTest h4 {
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 40px;
+  color: #666;
+  font-weight: normal;
+}
+#info_student #OrderTest h4 .stu_add,
+#info_admin #OrderTest h4 .stu_add,
+#info_teacher #OrderTest h4 .stu_add {
+  color: #888;
+  cursor: pointer;
+  margin-left: 20px;
+}
+#info_student #OrderTest h4 .stu_add:hover,
+#info_admin #OrderTest h4 .stu_add:hover,
+#info_teacher #OrderTest h4 .stu_add:hover {
+  color: #ff3333;
+}
+#info_student #OrderTest .admin_infor,
+#info_admin #OrderTest .admin_infor,
+#info_teacher #OrderTest .admin_infor {
+  margin-top: 10px;
+}
+#info_student #OrderTest .admin_infor li,
+#info_admin #OrderTest .admin_infor li,
+#info_teacher #OrderTest .admin_infor li {
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  margin-left: 100px;
+}
+#info_student #OrderTest .admin_infor li span,
+#info_admin #OrderTest .admin_infor li span,
+#info_teacher #OrderTest .admin_infor li span {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 100px;
+}
+#info_student #OrderTest .admin_infor li .stu_delete,
+#info_admin #OrderTest .admin_infor li .stu_delete,
+#info_teacher #OrderTest .admin_infor li .stu_delete,
+#info_student #OrderTest .admin_infor li .stu_revise,
+#info_admin #OrderTest .admin_infor li .stu_revise,
+#info_teacher #OrderTest .admin_infor li .stu_revise,
+#info_student #OrderTest .admin_infor li .stu_stu,
+#info_admin #OrderTest .admin_infor li .stu_stu,
+#info_teacher #OrderTest .admin_infor li .stu_stu,
+#info_student #OrderTest .admin_infor li .getgrade,
+#info_admin #OrderTest .admin_infor li .getgrade,
+#info_teacher #OrderTest .admin_infor li .getgrade,
+#info_student #OrderTest .admin_infor li .checkstu,
+#info_admin #OrderTest .admin_infor li .checkstu,
+#info_teacher #OrderTest .admin_infor li .checkstu {
+  width: 80px;
+  color: #888;
+  cursor: pointer;
+}
+#info_student #OrderTest .admin_infor li .stu_delete:hover,
+#info_admin #OrderTest .admin_infor li .stu_delete:hover,
+#info_teacher #OrderTest .admin_infor li .stu_delete:hover,
+#info_student #OrderTest .admin_infor li .stu_revise:hover,
+#info_admin #OrderTest .admin_infor li .stu_revise:hover,
+#info_teacher #OrderTest .admin_infor li .stu_revise:hover,
+#info_student #OrderTest .admin_infor li .stu_stu:hover,
+#info_admin #OrderTest .admin_infor li .stu_stu:hover,
+#info_teacher #OrderTest .admin_infor li .stu_stu:hover,
+#info_student #OrderTest .admin_infor li .getgrade:hover,
+#info_admin #OrderTest .admin_infor li .getgrade:hover,
+#info_teacher #OrderTest .admin_infor li .getgrade:hover,
+#info_student #OrderTest .admin_infor li .checkstu:hover,
+#info_admin #OrderTest .admin_infor li .checkstu:hover,
+#info_teacher #OrderTest .admin_infor li .checkstu:hover {
+  color: #ff3333;
+}
+#info_student #OrderTest .admin_infor li .stu_s,
+#info_admin #OrderTest .admin_infor li .stu_s,
+#info_teacher #OrderTest .admin_infor li .stu_s,
+#info_student #OrderTest .admin_infor li .stu_stu,
+#info_admin #OrderTest .admin_infor li .stu_stu,
+#info_teacher #OrderTest .admin_infor li .stu_stu,
+#info_student #OrderTest .admin_infor li .getgrade,
+#info_admin #OrderTest .admin_infor li .getgrade,
+#info_teacher #OrderTest .admin_infor li .getgrade,
+#info_student #OrderTest .admin_infor li .checkstu,
+#info_admin #OrderTest .admin_infor li .checkstu,
+#info_teacher #OrderTest .admin_infor li .checkstu {
+  width: 100px;
+}
+#info_student #OrderTest .admin_infor li .stu_del,
+#info_admin #OrderTest .admin_infor li .stu_del,
+#info_teacher #OrderTest .admin_infor li .stu_del,
+#info_student #OrderTest .admin_infor li .stu_re,
+#info_admin #OrderTest .admin_infor li .stu_re,
+#info_teacher #OrderTest .admin_infor li .stu_re {
+  width: 80px;
+}
+#info_student #OrderTest .admin_infor li .item_name,
+#info_admin #OrderTest .admin_infor li .item_name,
+#info_teacher #OrderTest .admin_infor li .item_name,
+#info_student #OrderTest .admin_infor li .it_name,
+#info_admin #OrderTest .admin_infor li .it_name,
+#info_teacher #OrderTest .admin_infor li .it_name,
+#info_student #OrderTest .admin_infor li .stu_item,
+#info_admin #OrderTest .admin_infor li .stu_item,
+#info_teacher #OrderTest .admin_infor li .stu_item {
+  width: 200px;
+}
+#info_student #OrderTest .teacher_infor,
+#info_admin #OrderTest .teacher_infor,
+#info_teacher #OrderTest .teacher_infor {
+  margin-top: 10px;
+  margin-left: 80px;
+}
+#info_student #OrderTest .teacher_infor li,
+#info_admin #OrderTest .teacher_infor li,
+#info_teacher #OrderTest .teacher_infor li {
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  margin-left: 100px;
+}
+#info_student #OrderTest .teacher_infor li span,
+#info_admin #OrderTest .teacher_infor li span,
+#info_teacher #OrderTest .teacher_infor li span {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 100px;
+}
+#info_student #OrderTest .teacher_infor li .stu_delete,
+#info_admin #OrderTest .teacher_infor li .stu_delete,
+#info_teacher #OrderTest .teacher_infor li .stu_delete,
+#info_student #OrderTest .teacher_infor li .stu_revise,
+#info_admin #OrderTest .teacher_infor li .stu_revise,
+#info_teacher #OrderTest .teacher_infor li .stu_revise,
+#info_student #OrderTest .teacher_infor li .stu_stu,
+#info_admin #OrderTest .teacher_infor li .stu_stu,
+#info_teacher #OrderTest .teacher_infor li .stu_stu,
+#info_student #OrderTest .teacher_infor li .getgrade,
+#info_admin #OrderTest .teacher_infor li .getgrade,
+#info_teacher #OrderTest .teacher_infor li .getgrade,
+#info_student #OrderTest .teacher_infor li .checkstu,
+#info_admin #OrderTest .teacher_infor li .checkstu,
+#info_teacher #OrderTest .teacher_infor li .checkstu {
+  width: 80px;
+  color: #888;
+  cursor: pointer;
+}
+#info_student #OrderTest .teacher_infor li .stu_delete:hover,
+#info_admin #OrderTest .teacher_infor li .stu_delete:hover,
+#info_teacher #OrderTest .teacher_infor li .stu_delete:hover,
+#info_student #OrderTest .teacher_infor li .stu_revise:hover,
+#info_admin #OrderTest .teacher_infor li .stu_revise:hover,
+#info_teacher #OrderTest .teacher_infor li .stu_revise:hover,
+#info_student #OrderTest .teacher_infor li .stu_stu:hover,
+#info_admin #OrderTest .teacher_infor li .stu_stu:hover,
+#info_teacher #OrderTest .teacher_infor li .stu_stu:hover,
+#info_student #OrderTest .teacher_infor li .getgrade:hover,
+#info_admin #OrderTest .teacher_infor li .getgrade:hover,
+#info_teacher #OrderTest .teacher_infor li .getgrade:hover,
+#info_student #OrderTest .teacher_infor li .checkstu:hover,
+#info_admin #OrderTest .teacher_infor li .checkstu:hover,
+#info_teacher #OrderTest .teacher_infor li .checkstu:hover {
+  color: #ff3333;
+}
+#info_student #OrderTest .teacher_infor li .stu_s,
+#info_admin #OrderTest .teacher_infor li .stu_s,
+#info_teacher #OrderTest .teacher_infor li .stu_s,
+#info_student #OrderTest .teacher_infor li .stu_stu,
+#info_admin #OrderTest .teacher_infor li .stu_stu,
+#info_teacher #OrderTest .teacher_infor li .stu_stu,
+#info_student #OrderTest .teacher_infor li .getgrade,
+#info_admin #OrderTest .teacher_infor li .getgrade,
+#info_teacher #OrderTest .teacher_infor li .getgrade,
+#info_student #OrderTest .teacher_infor li .checkstu,
+#info_admin #OrderTest .teacher_infor li .checkstu,
+#info_teacher #OrderTest .teacher_infor li .checkstu {
+  width: 100px;
+}
+#info_student #OrderTest .teacher_infor li .stu_del,
+#info_admin #OrderTest .teacher_infor li .stu_del,
+#info_teacher #OrderTest .teacher_infor li .stu_del,
+#info_student #OrderTest .teacher_infor li .stu_re,
+#info_admin #OrderTest .teacher_infor li .stu_re,
+#info_teacher #OrderTest .teacher_infor li .stu_re {
+  width: 80px;
+}
+#info_student #OrderTest .teacher_infor li .item_name,
+#info_admin #OrderTest .teacher_infor li .item_name,
+#info_teacher #OrderTest .teacher_infor li .item_name,
+#info_student #OrderTest .teacher_infor li .it_name,
+#info_admin #OrderTest .teacher_infor li .it_name,
+#info_teacher #OrderTest .teacher_infor li .it_name,
+#info_student #OrderTest .teacher_infor li .stu_item,
+#info_admin #OrderTest .teacher_infor li .stu_item,
+#info_teacher #OrderTest .teacher_infor li .stu_item {
+  width: 200px;
+}
+#info_student #OrderTest .student_infor,
+#info_admin #OrderTest .student_infor,
+#info_teacher #OrderTest .student_infor {
+  margin-top: 10px;
+  margin-left: 80px;
+}
+#info_student #OrderTest .student_infor li,
+#info_admin #OrderTest .student_infor li,
+#info_teacher #OrderTest .student_infor li {
+  height: 25px;
+  line-height: 25px;
+  float: left;
+  margin-left: 100px;
+}
+#info_student #OrderTest .student_infor li span,
+#info_admin #OrderTest .student_infor li span,
+#info_teacher #OrderTest .student_infor li span {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 100px;
+}
+#info_student #OrderTest .student_infor li .stu_delete,
+#info_admin #OrderTest .student_infor li .stu_delete,
+#info_teacher #OrderTest .student_infor li .stu_delete,
+#info_student #OrderTest .student_infor li .stu_revise,
+#info_admin #OrderTest .student_infor li .stu_revise,
+#info_teacher #OrderTest .student_infor li .stu_revise,
+#info_student #OrderTest .student_infor li .stu_stu,
+#info_admin #OrderTest .student_infor li .stu_stu,
+#info_teacher #OrderTest .student_infor li .stu_stu,
+#info_student #OrderTest .student_infor li .getgrade,
+#info_admin #OrderTest .student_infor li .getgrade,
+#info_teacher #OrderTest .student_infor li .getgrade,
+#info_student #OrderTest .student_infor li .checkstu,
+#info_admin #OrderTest .student_infor li .checkstu,
+#info_teacher #OrderTest .student_infor li .checkstu {
+  width: 80px;
+  color: #888;
+  cursor: pointer;
+}
+#info_student #OrderTest .student_infor li .stu_delete:hover,
+#info_admin #OrderTest .student_infor li .stu_delete:hover,
+#info_teacher #OrderTest .student_infor li .stu_delete:hover,
+#info_student #OrderTest .student_infor li .stu_revise:hover,
+#info_admin #OrderTest .student_infor li .stu_revise:hover,
+#info_teacher #OrderTest .student_infor li .stu_revise:hover,
+#info_student #OrderTest .student_infor li .stu_stu:hover,
+#info_admin #OrderTest .student_infor li .stu_stu:hover,
+#info_teacher #OrderTest .student_infor li .stu_stu:hover,
+#info_student #OrderTest .student_infor li .getgrade:hover,
+#info_admin #OrderTest .student_infor li .getgrade:hover,
+#info_teacher #OrderTest .student_infor li .getgrade:hover,
+#info_student #OrderTest .student_infor li .checkstu:hover,
+#info_admin #OrderTest .student_infor li .checkstu:hover,
+#info_teacher #OrderTest .student_infor li .checkstu:hover {
+  color: #ff3333;
+}
+#info_student #OrderTest .student_infor li .stu_s,
+#info_admin #OrderTest .student_infor li .stu_s,
+#info_teacher #OrderTest .student_infor li .stu_s,
+#info_student #OrderTest .student_infor li .stu_stu,
+#info_admin #OrderTest .student_infor li .stu_stu,
+#info_teacher #OrderTest .student_infor li .stu_stu,
+#info_student #OrderTest .student_infor li .getgrade,
+#info_admin #OrderTest .student_infor li .getgrade,
+#info_teacher #OrderTest .student_infor li .getgrade,
+#info_student #OrderTest .student_infor li .checkstu,
+#info_admin #OrderTest .student_infor li .checkstu,
+#info_teacher #OrderTest .student_infor li .checkstu {
+  width: 100px;
+}
+#info_student #OrderTest .student_infor li .stu_del,
+#info_admin #OrderTest .student_infor li .stu_del,
+#info_teacher #OrderTest .student_infor li .stu_del,
+#info_student #OrderTest .student_infor li .stu_re,
+#info_admin #OrderTest .student_infor li .stu_re,
+#info_teacher #OrderTest .student_infor li .stu_re {
+  width: 80px;
+}
+#info_student #OrderTest .student_infor li .item_name,
+#info_admin #OrderTest .student_infor li .item_name,
+#info_teacher #OrderTest .student_infor li .item_name,
+#info_student #OrderTest .student_infor li .it_name,
+#info_admin #OrderTest .student_infor li .it_name,
+#info_teacher #OrderTest .student_infor li .it_name,
+#info_student #OrderTest .student_infor li .stu_item,
+#info_admin #OrderTest .student_infor li .stu_item,
+#info_teacher #OrderTest .student_infor li .stu_item {
+  width: 200px;
+}
+#info_student #AdminPublic h4,
+#info_admin #AdminPublic h4,
+#info_teacher #AdminPublic h4 {
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 40px;
+  color: #666;
+  font-weight: normal;
+}
+#info_student #AdminPublic h4 .stu_add,
+#info_admin #AdminPublic h4 .stu_add,
+#info_teacher #AdminPublic h4 .stu_add {
+  color: #888;
+  cursor: pointer;
+  margin-left: 20px;
+}
+#info_student #AdminPublic h4 .stu_add:hover,
+#info_admin #AdminPublic h4 .stu_add:hover,
+#info_teacher #AdminPublic h4 .stu_add:hover {
+  color: #ff3333;
+}
+#info_student #AdminPublic .admin_infor,
+#info_admin #AdminPublic .admin_infor,
+#info_teacher #AdminPublic .admin_infor {
+  margin-top: 10px;
+}
+#info_student #AdminPublic .admin_infor li,
+#info_admin #AdminPublic .admin_infor li,
+#info_teacher #AdminPublic .admin_infor li {
+  margin-left: 10px;
+  background-color: white;
+  padding: 5px;
+  margin: 20px;
+  box-shadow: 4px 4px 4px #888888;
+  border-radius: 5px;
+}
+#info_student #AdminPublic .admin_infor li span,
+#info_admin #AdminPublic .admin_infor li span,
+#info_teacher #AdminPublic .admin_infor li span {
+  height: 25px;
+  line-height: 25px;
+  background-color: white;
+  width: 100px;
+  margin-left: 20px;
+}
+#info_student #AdminPublic .admin_infor li .stu_delete,
+#info_admin #AdminPublic .admin_infor li .stu_delete,
+#info_teacher #AdminPublic .admin_infor li .stu_delete,
+#info_student #AdminPublic .admin_infor li .stu_revise,
+#info_admin #AdminPublic .admin_infor li .stu_revise,
+#info_teacher #AdminPublic .admin_infor li .stu_revise {
+  color: #888;
+  cursor: pointer;
+}
+#info_student #AdminPublic .admin_infor li .stu_delete:hover,
+#info_admin #AdminPublic .admin_infor li .stu_delete:hover,
+#info_teacher #AdminPublic .admin_infor li .stu_delete:hover,
+#info_student #AdminPublic .admin_infor li .stu_revise:hover,
+#info_admin #AdminPublic .admin_infor li .stu_revise:hover,
+#info_teacher #AdminPublic .admin_infor li .stu_revise:hover {
+  color: #ff3333;
+}
+#info_student #TeacherStuinfo li,
+#info_admin #TeacherStuinfo li,
+#info_teacher #TeacherStuinfo li,
+#info_student #Personpassword li,
+#info_admin #Personpassword li,
+#info_teacher #Personpassword li,
+#info_student #Teacherpassword li,
+#info_admin #Teacherpassword li,
+#info_teacher #Teacherpassword li,
+#info_student #Studentpassword li,
+#info_admin #Studentpassword li,
+#info_teacher #Studentpassword li {
+  padding: 5px;
+  height: 30px;
+  line-height: 30px;
+  margin: auto auto;
+  width: 490px;
+}
+#info_student #TeacherStuinfo li span,
+#info_admin #TeacherStuinfo li span,
+#info_teacher #TeacherStuinfo li span,
+#info_student #Personpassword li span,
+#info_admin #Personpassword li span,
+#info_teacher #Personpassword li span,
+#info_student #Teacherpassword li span,
+#info_admin #Teacherpassword li span,
+#info_teacher #Teacherpassword li span,
+#info_student #Studentpassword li span,
+#info_admin #Studentpassword li span,
+#info_teacher #Studentpassword li span {
+  height: 30px;
+  display: block;
+  float: left;
+  background-color: white;
+  width: 120px;
+}
+#info_student #TeacherStuinfo li input,
+#info_admin #TeacherStuinfo li input,
+#info_teacher #TeacherStuinfo li input,
+#info_student #Personpassword li input,
+#info_admin #Personpassword li input,
+#info_teacher #Personpassword li input,
+#info_student #Teacherpassword li input,
+#info_admin #Teacherpassword li input,
+#info_teacher #Teacherpassword li input,
+#info_student #Studentpassword li input,
+#info_admin #Studentpassword li input,
+#info_teacher #Studentpassword li input {
+  width: 350px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  border: none;
+  float: left;
+  margin-left: 5px;
+}
+#info_student #TeacherStuinfo .entering,
+#info_admin #TeacherStuinfo .entering,
+#info_teacher #TeacherStuinfo .entering,
+#info_student #Personpassword .entering,
+#info_admin #Personpassword .entering,
+#info_teacher #Personpassword .entering,
+#info_student #Teacherpassword .entering,
+#info_admin #Teacherpassword .entering,
+#info_teacher #Teacherpassword .entering,
+#info_student #Studentpassword .entering,
+#info_admin #Studentpassword .entering,
+#info_teacher #Studentpassword .entering {
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #d9acac, #f0f0f0, #9d9d9d);
+  cursor: pointer;
+}
+#info_student #TeacherTea li,
+#info_admin #TeacherTea li,
+#info_teacher #TeacherTea li,
+#info_student #PersonInfor li,
+#info_admin #PersonInfor li,
+#info_teacher #PersonInfor li {
+  padding: 5px;
+  height: 30px;
+  line-height: 30px;
+  margin: auto auto;
+  width: 410px;
+}
+#info_student #TeacherTea li span,
+#info_admin #TeacherTea li span,
+#info_teacher #TeacherTea li span,
+#info_student #PersonInfor li span,
+#info_admin #PersonInfor li span,
+#info_teacher #PersonInfor li span {
+  height: 30px;
+  display: block;
+  float: left;
+  background-color: white;
+}
+#info_student #TeacherTea li span:first-child,
+#info_admin #TeacherTea li span:first-child,
+#info_teacher #TeacherTea li span:first-child,
+#info_student #PersonInfor li span:first-child,
+#info_admin #PersonInfor li span:first-child,
+#info_teacher #PersonInfor li span:first-child {
+  width: 120px;
+  border-right: none;
+}
+#info_student #TeacherTea li span:last-child,
+#info_admin #TeacherTea li span:last-child,
+#info_teacher #TeacherTea li span:last-child,
+#info_student #PersonInfor li span:last-child,
+#info_admin #PersonInfor li span:last-child,
+#info_teacher #PersonInfor li span:last-child {
+  width: 280px;
+  border-left: none;
+}
+#info_student #TeacherTea .entering,
+#info_admin #TeacherTea .entering,
+#info_teacher #TeacherTea .entering,
+#info_student #PersonInfor .entering,
+#info_admin #PersonInfor .entering,
+#info_teacher #PersonInfor .entering {
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #d9acac, #f0f0f0, #9d9d9d);
+  cursor: pointer;
+}
+#info_student #TeacherTea .entering,
+#info_admin #TeacherTea .entering,
+#info_teacher #TeacherTea .entering,
+#info_student #PersonInfor .entering,
+#info_admin #PersonInfor .entering,
+#info_teacher #PersonInfor .entering {
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #d9acac, #f0f0f0, #9d9d9d);
+  cursor: pointer;
+}

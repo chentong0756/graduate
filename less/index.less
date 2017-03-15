@@ -1,0 +1,618 @@
+
+span, h1, h2, h3, h4, h5, h6, p, a, code, img, b, small,i, dl, dt, dd, ol, ul, li, form, time, strong, aside, canvas, footer, header,nav, section, article{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Roboto, sans-serif;
+    vertical-align: baseline;
+    -webkit-text-size-adjust:none;
+    -webkit-touch-callout: none;
+    text-decoration: none;
+    list-style:none;
+    font-family:"微软雅黑";
+}
+body{
+	font-size:16px;
+	font-family:"微软雅黑";
+	text-align:center;
+	width:1200px;
+	margin:auto auto;
+}
+@border-color:#BEBEBE;
+@border-style:2px solid #BEBEBE;
+@shadow-style:4px 4px 4px #888;
+@hover-color:#FF3333;
+.line-h(@line-h){
+	height:@line-h;
+	line-height:@line-h;
+}
+
+.border{
+	border:2px solid #BEBEBE;
+}
+#teacher_photo,#student_photo,#admin_photo{
+	position:absolute;
+	left:9%;
+	top:59%;
+	height:180px;
+	z-index:-100;
+}
+#student_photo{
+	height:230px;
+}
+#admin_photo{
+	position:absolute;
+	left:7%;
+	height:210px;
+}
+//登录注册页
+#entry{
+	margin:auto auto;
+	width:1000px;
+
+		#maininfo{
+			margin:auto auto;
+			width:300px;
+			margin-top:50px;
+		}
+
+		#win{
+			height:300px;
+			width:400px;
+			border-radius:20px;
+			border:@border-style;
+			background-color:white;
+			opacity:0.7;
+			position:absolute;		
+			left:45%;
+			top:200px;
+			padding:30px;
+
+			&>div:first-child{
+				color:#666;
+				margin-top:20px;
+				font-size:20px;
+			}
+
+			&>div{
+				margin:30px;
+				font-size:18px;
+
+				&>input{
+				padding-left:5px;
+				}
+
+				#login{
+					height:30px;
+					width:80px;
+					cursor:pointer;
+				}
+			}
+		}
+
+		#background{
+			height:500px;
+			width:700px;
+			margin-left:160px;
+			margin-top:25px;
+			background:url(../build/img/cp1.jpg);
+			border-radius:20px;
+			z-index:-100;
+			float:left;
+			border:@border-style;
+			box-shadow:10px 10px 20px #666;
+		}
+
+		&>div:last-child{
+			background:linear-gradient(black,#888,#DDD,#888,black);
+			height:350px;
+			width:1000px;
+			position:absolute;
+			top:180px;
+			z-index:-200;
+		}
+}
+
+//学生管理模块
+//目录
+#item{
+	float:left;
+	width:150px;
+	border:@border-style;
+	margin-top:20px;
+	box-shadow:@shadow-style;
+
+	&>div{
+		padding:3px;
+		font-size:18px;
+		background:linear-gradient(to right,#cf5959,#E0E0E0,#3C3C3C);
+	}
+
+	li{
+		border-top:@border-style;
+		display:block;
+		padding:5px;
+		background-color:#f6f1f1;
+		font-family:"微软雅黑";
+		color:#4F4F4F;
+
+		&:hover{
+			background:linear-gradient(to right,#d9acac,#F0F0F0,#9D9D9D);
+			cursor:pointer;
+		}
+	}
+}
+//主要信息
+#info_student,#info_admin,#info_teacher{
+	float:left;
+	width:1000px;
+	height:600px;
+	border:@border-style;
+	margin-top:20px;
+	margin-left:20px;
+	background:#f6f1f1;
+
+	//通用标题
+	.title{
+		padding-top:8px;	
+		color:#6C6C6C;
+		height:30px;
+		border-bottom:@border-style;
+		margin-bottom:20px;
+		font-size:18px;
+		background:linear-gradient(to right,#cf5959,#E0E0E0,#3C3C3C);
+	}
+	//学生管理-个人信息
+	#information{
+		
+		li{
+			padding:5px;
+			.line-h(30px);
+			margin:auto auto;
+			width:410px;
+
+			span{
+				height:30px;
+				display:block;
+				float:left;
+				background-color:white;
+
+				&:first-child{
+					width:120px;
+					border-right:none;
+				}
+				&:last-child{
+					width:280px;
+					border-left:none;
+				}
+			}
+		}
+		.entering{
+				width:130px;
+				.line-h(30px);
+				margin-top:20px;
+				background:linear-gradient(to right,#d9acac,#F0F0F0,#9D9D9D);
+				cursor:pointer;
+		}
+
+	}
+	//学生管理-查看公告
+	#PublicInformation{
+		li{
+			box-shadow:@shadow-style;
+			background-color:white;
+			border-radius:5px;
+
+			span{
+				display:block;
+				margin-top:5px;
+				color:#888;
+				cursor:pointer;
+
+				&:hover{
+					color:@hover-color;
+				}
+			}
+		}
+
+		.whole{
+			margin:10px;
+			padding:10px;
+		}
+		.half{
+			margin:10px;
+			padding:10px;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			overflow:hidden;
+		}
+	}
+	//管理员模块-学生管理-管理员
+	#AdminStudent,#AdminAdmin,#AdminGetstu,#TeaGetstu{
+
+		input{
+			.line-h(30px);
+			width:300px;
+			font-size:18px;
+			padding-left:10px;
+		}
+		h4{
+			margin-top:10px;
+			text-align:left;
+			padding-left:40px;
+			color:#666;
+			font-weight:normal;
+
+			.stu_add{
+				color:#888;
+				cursor:pointer;
+				margin-left:20px;
+
+				&:hover{
+					color:@hover-color;
+				}
+			}
+		}
+		.admin_infor{
+			margin-top:10px;
+
+			li{
+				.line-h(25px);
+				width:600px;
+				float:left;
+				margin-left:200px;
+
+				span{
+					.line-h(25px);
+					display:block;
+					float:left;
+					background-color:white;
+					width:100px;
+				}
+				.stu_delete,.stu_revise,.enterstu{
+					color:#888;
+					cursor:pointer;
+
+					&:hover{
+						color:@hover-color;
+					}
+				}
+			}
+		}
+	}
+	//管理员模块-教师管理
+	#AdminTeacher{
+		input{
+			.line-h(30px);
+			width:300px;
+			font-size:18px;
+			padding-left:10px;
+		}
+
+		h4{
+			margin-top:10px;
+			text-align:left;
+			padding-left:40px;
+			color:#666;
+			font-weight:normal;
+
+			.stu_add{
+				color:#888;
+				cursor:pointer;
+				margin-left:20px;
+
+				&:hover{
+					color:@hover-color;
+				}
+			}
+		}
+		.admin_infor{
+			margin-top:10px;
+
+			li{
+				.line-h(25px);
+				float:left;
+				margin-left:100px;
+
+				span{
+					.line-h(25px);
+					display:block;
+					float:left;
+					background-color:white;
+					width:100px;
+
+					&:nth-child(3){
+						width:200px;
+					}
+				}
+				.stu_delete,.stu_revise{
+					color:#888;
+					cursor:pointer;
+
+					&:hover{
+						color:@hover-color;
+					}
+				}
+			}
+		}
+	}
+	#AdminAddstudent,#AdminRestudent,#AdminAddadmin,#AdminReadmin,#AdminAdditem,
+	#AdminReitem,#AdminAddteacher,#AdminReteacher,#AdminAddnotice,#AdminRenotice,
+	#AdminAddTestdis,#AdminReTestdis{
+		#TeacherStuinfo;
+	}
+	//管理员-项目管理
+	#AdminTest{
+
+		h4{
+			margin-top:10px;
+			text-align:left;
+			padding-left:40px;
+			color:#666;
+			font-weight:normal;
+
+			.stu_add{
+				color:#888;
+				cursor:pointer;
+				margin-left:20px;
+
+				&:hover{
+					color:@hover-color;
+				}
+			}
+		}
+		.admin_infor{
+			margin-top:10px;
+
+			li{
+				.line-h(25px);
+				float:left;
+				margin-left:10px;
+
+				span{
+					.line-h(25px);
+					display:block;
+					float:left;
+					background-color:white;
+					width:100px;
+
+					&:first-child{
+						width:280px;
+					}
+					&:nth-child(3){
+						width:200px;
+					}
+				}
+				.stu_delete,.stu_revise,.stu_adddis{
+					color:#888;
+					cursor:pointer;
+
+					&:hover{
+						color:@hover-color;
+					}
+				}
+			}
+		}
+	}
+	//管理员项目批次管理-教师项目-学生已预约项目
+	#AdminTestdis,#TeacherTest,#OrderTestok{
+
+		h4{
+			margin-top:10px;
+			text-align:left;
+			padding-left:40px;
+			color:#666;
+			font-weight:normal;
+
+			.stu_add{
+				color:#888;
+				cursor:pointer;
+				margin-left:20px;
+
+				&:hover{
+					color:@hover-color;
+				}
+			}
+		}
+		.admin_infor{
+			margin-top:10px;
+
+			li{
+				.line-h(25px);
+				float:left;
+				margin-left:20px;
+
+				span{
+					.line-h(25px);
+					display:block;
+					float:left;
+					background-color:white;
+					width:100px;
+				}
+				.stu_delete,.stu_revise,.stu_stu,.getgrade,.checkstu{
+					width:80px;
+					color:#888;
+					cursor:pointer;
+
+					&:hover{
+						color:@hover-color;
+					}
+				}
+				.stu_s,.stu_stu,.getgrade,.checkstu{
+					width:100px;
+				}
+				.stu_del,.stu_re{
+					width:80px;
+				}
+				.item_name,.it_name,.stu_item{
+					width:200px;
+				}
+			}
+		}
+		.teacher_infor{
+			.admin_infor;
+			margin-left:80px;
+		}
+		.student_infor{
+			.admin_infor;
+			margin-left:80px;
+		}
+	}
+	#OrderTest{
+
+		h4{
+			margin-top:10px;
+			text-align:left;
+			padding-left:40px;
+			color:#666;
+			font-weight:normal;
+
+			.stu_add{
+				color:#888;
+				cursor:pointer;
+				margin-left:20px;
+
+				&:hover{
+					color:@hover-color;
+				}
+			}
+		}
+		.admin_infor{
+			margin-top:10px;
+
+			li{
+				.line-h(25px);
+				float:left;
+				margin-left:100px;
+
+				span{
+					.line-h(25px);
+					display:block;
+					float:left;
+					background-color:white;
+					width:100px;
+				}
+				.stu_delete,.stu_revise,.stu_stu,.getgrade,.checkstu{
+					width:80px;
+					color:#888;
+					cursor:pointer;
+
+					&:hover{
+						color:@hover-color;
+					}
+				}
+				.stu_s,.stu_stu,.getgrade,.checkstu{
+					width:100px;
+				}
+				.stu_del,.stu_re{
+					width:80px;
+				}
+				.item_name,.it_name,.stu_item{
+					width:200px;
+				}
+			}
+		}
+		.teacher_infor{
+			.admin_infor;
+			margin-left:80px;
+		}
+		.student_infor{
+			.admin_infor;
+			margin-left:80px;
+		}
+	}
+	//管理员-公告管理
+	#AdminPublic{
+
+		h4{
+			margin-top:10px;
+			text-align:left;
+			padding-left:40px;
+			color:#666;
+			font-weight:normal;
+
+			.stu_add{
+				color:#888;
+				cursor:pointer;
+				margin-left:20px;
+
+				&:hover{
+					color:@hover-color;
+				}
+			}
+		}
+		.admin_infor{
+			margin-top:10px;
+
+			li{
+				margin-left:10px;
+				background-color:white;
+				padding:5px;
+				margin:20px;
+				box-shadow:@shadow-style;
+				border-radius:5px;
+
+				span{
+					.line-h(25px);
+					background-color:white;
+					width:100px;
+					margin-left:20px;
+				}
+				.stu_delete,.stu_revise{
+					color:#888;
+					cursor:pointer;
+
+					&:hover{
+						color:@hover-color;
+					}
+				}
+			}
+		}
+	}
+
+	//教师管理模块-写入学生成绩 //学生管理-预约实验
+	#TeacherStuinfo,#Personpassword,#Teacherpassword,#Studentpassword{
+		
+		li{
+			padding:5px;
+			.line-h(30px);
+			margin:auto auto;
+			width:490px;
+
+			span{
+				height:30px;
+				display:block;
+				float:left;
+				background-color:white;
+				width:120px;				
+			}		
+			input{
+				width:350px;
+				.line-h(28px);
+				padding-left:10px;
+				border:none;
+				float:left;
+				margin-left:5px;
+			}
+		}
+		.entering{
+			width:130px;
+			.line-h(30px);
+			margin-top:20px;
+			background:linear-gradient(to right,#d9acac,#F0F0F0,#9D9D9D);
+			cursor:pointer;
+		}
+	}
+	//教师管理模块-个人信息-管理员个人信息
+	#TeacherTea,#PersonInfor{
+		#information;
+		.entering{
+				width:130px;
+				.line-h(30px);
+				margin-top:20px;
+				background:linear-gradient(to right,#d9acac,#F0F0F0,#9D9D9D);
+				cursor:pointer;
+		}
+	}
+}
+

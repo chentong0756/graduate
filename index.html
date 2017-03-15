@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+  <head>
+    <meta charset="utf-8">
+    <title>实验室管理系统</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    <div id="entry">
+      <div id="maininfo"><img src="build/img/font.png"></div>
+      <div id="background"></div>
+      <div id="win">
+        <div> 用户登录/login </div>
+        <div>
+          用户名:
+          <input class="username" type="text" />
+        </div>
+        <div>
+          密&nbsp&nbsp&nbsp码:
+          <input class="password" type="password" />
+        </div>  
+        <div class="identity">
+          <input type="radio" name="radio_Admin" value="管理员">管理员</input>
+          <input type="radio" name="radio_Admin" checked value="学生">学生</input>
+          <input type="radio" name="radio_Admin" value="教师">教师</input>
+        </div>  
+        <div>
+          <input id="login" type="button" value="登陆" name="login"/>
+        </div> 
+      </div>
+      <div></div>
+    </div>
+    
+    <script src="build/lib/jquery-3.1.1.min.js"></script><!-- 引入jquery库 -->
+    <script src="build/lib/react.js"></script> <!-- React 的核心库 -->
+    <script src="build/lib/react-dom.js"></script><!-- 提供与 DOM 相关的功能 -->
+    <script src="build/lib/browser.min.js"></script><!-- 将 JSX 语法转为 JavaScript 语法 -->
+
+    <script src="build/index.js" ></script><!-- 引入js代码 -->
+
+  </body>
+</html>
