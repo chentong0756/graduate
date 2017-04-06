@@ -686,7 +686,7 @@ $(".stuent_order").click(function(){
 	 			if(data.code=="200")
 	 			{
 	 				//console.log(data);
-	 				alert("成功添加,信息已保存")
+	 				alert("新增管理员用户名为 "+data.data+"\n默认密码为11111111"+"\n信息已成功保存");
 	 			}
 	 			else{
 	 				alert("保存失败");
@@ -870,7 +870,7 @@ $(".stuent_order").click(function(){
 	 		success:function(data){
 	 			if(data.code=="200")
 	 			{
-	 				alert("成功添加,信息已保存")
+	 				alert("新增管理员用户名为 "+data.data+"\n默认密码为11111111"+"\n信息已成功保存");
 	 			}
 	 			else{
 	 				alert("保存失败");
@@ -1050,7 +1050,7 @@ $(".stuent_order").click(function(){
 	 		success:function(data){
 	 			if(data.code=="200")
 	 			{
-	 				alert("成功添加,信息已保存")
+	 				alert("新增管理员用户名为 "+data.data+"\n默认密码为11111111"+"\n信息已成功保存");
 	 			}
 	 			else{
 	 				alert("保存失败");

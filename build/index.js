@@ -1015,7 +1015,7 @@
 				success: function (data) {
 					if (data.code == "200") {
 						//console.log(data);
-						alert("成功添加,信息已保存");
+						alert("新增管理员用户名为 " + data.data + "\n默认密码为11111111" + "\n信息已成功保存");
 					} else {
 						alert("保存失败");
 					}
@@ -1378,7 +1378,7 @@
 				data: JSON.stringify(teacher),
 				success: function (data) {
 					if (data.code == "200") {
-						alert("成功添加,信息已保存");
+						alert("新增管理员用户名为 " + data.data + "\n默认密码为11111111" + "\n信息已成功保存");
 					} else {
 						alert("保存失败");
 					}
@@ -1719,7 +1719,7 @@
 				data: JSON.stringify(student),
 				success: function (data) {
 					if (data.code == "200") {
-						alert("成功添加,信息已保存");
+						alert("新增管理员用户名为 " + data.data + "\n默认密码为11111111" + "\n信息已成功保存");
 					} else {
 						alert("保存失败");
 					}
